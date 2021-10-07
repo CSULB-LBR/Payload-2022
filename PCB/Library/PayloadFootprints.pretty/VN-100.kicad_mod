@@ -1,5 +1,5 @@
-(module VN-100 (layer F.Cu) (tedit 615A637A)
-  (fp_text reference REF** (at 0 -15.24) (layer F.SilkS)
+(module VN-100 (layer F.Cu) (tedit 615E3B2C)
+  (fp_text reference U (at 0 -15.24) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value VN-100 (at 0 15.24) (layer F.Fab)

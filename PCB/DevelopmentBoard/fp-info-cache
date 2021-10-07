@@ -1,4 +1,4 @@
-19219341291102830
+19220972836738146
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72576,6 +72576,13 @@ D24V22F5_VoltageRegulator
 6
 6
 PayloadFootprints
+Pi_CM4
+Raspberry Pi 4 Compute Module
+Raspberry Pi 4 Compute Module
+0
+200
+200
+PayloadFootprints
 TBS_Crossfire_RF
 
 
@@ -72594,8 +72601,8 @@ XT30
 
 
 0
-0
-0
+2
+2
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf
