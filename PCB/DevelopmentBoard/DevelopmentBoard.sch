@@ -1060,4 +1060,16 @@ Wire Wire Line
 	19700 7700 20350 7700
 Wire Wire Line
 	19700 7800 20350 7800
+Wire Wire Line
+	13400 4350 13050 4350
+Wire Wire Line
+	13400 4450 13050 4450
+Text Label 13400 4350 2    50   ~ 0
+USB_D-
+Text Label 13400 4450 2    50   ~ 0
+USB_D+
+Text Label 20200 7700 2    50   ~ 0
+USB_D-
+Text Label 20200 7800 2    50   ~ 0
+USB_D+
 $EndSCHEMATC
