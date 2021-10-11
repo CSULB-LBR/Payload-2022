@@ -43,12 +43,4 @@ Wire Wire Line
 	7500 3050 7500 2650
 Text Label 7500 2650 3    50   ~ 0
 Enable
-Wire Wire Line
-	5250 3650 5650 3650
-Text Label 5650 3650 2    50   ~ 0
-Vin
-Wire Wire Line
-	7700 3050 7700 2650
-Text Label 7700 2650 3    50   ~ 0
-Vin
 $EndSCHEMATC

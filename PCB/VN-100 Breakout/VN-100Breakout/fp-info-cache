@@ -1,4 +1,4 @@
-19222607193923666
+19224241260265310
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72568,6 +72568,13 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+PayloadFootprints
+2mmGrove_Connector
+
+
+0
+4
+1
 PayloadFootprints
 Barometer_Grove
 
