@@ -1,4 +1,4 @@
-19224241260265310
+19225875264252589
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72574,13 +72574,13 @@ PayloadFootprints
 
 0
 4
-1
+4
 PayloadFootprints
 Barometer_Grove
 
 
 0
-0
+3
 0
 PayloadFootprints
 D24V22F5_VoltageRegulator
@@ -72610,6 +72610,13 @@ VN-100
 0
 30
 30
+PayloadFootprints
+VN-100Breakout
+
+
+0
+16
+16
 PayloadFootprints
 XT30
 
