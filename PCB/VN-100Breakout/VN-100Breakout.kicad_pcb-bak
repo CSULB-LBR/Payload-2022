@@ -3,7 +3,7 @@
   (general
     (thickness 1.6002)
     (drawings 1)
-    (tracks 27)
+    (tracks 26)
     (zones 0)
     (modules 2)
     (nets 26)
@@ -271,7 +271,6 @@
 
   (gr_line (start 151.13 93.98) (end 151.13 93.345) (layer Cmts.User) (width 0.1524))
 
-  (via (at 163.195 88.265) (size 0.6858) (drill 0.3302) (layers Front Back) (net 0) (tstamp 61656AF0))
   (segment (start 141.605 97.79) (end 143.383 97.79) (width 0.254) (layer Front) (net 1))
   (segment (start 139.7 99.695) (end 141.605 97.79) (width 0.254) (layer Front) (net 1))
   (segment (start 139.7 101.6) (end 139.7 99.695) (width 0.254) (layer Front) (net 1))
