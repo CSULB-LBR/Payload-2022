@@ -881,12 +881,8 @@ Wire Wire Line
 	16850 7600 17500 7600
 Wire Wire Line
 	16850 7700 17500 7700
-Text Label 10550 8250 0    50   ~ 0
+Text Label 11000 8250 0    50   ~ 0
 SDA
-Wire Wire Line
-	10550 8250 11250 8250
-Wire Wire Line
-	10550 8150 11250 8150
 $Comp
 L Device:R_Small_US R?
 U 1 1 6160D96F
@@ -1068,7 +1064,7 @@ F 3 "" H 19050 8700 50  0001 C CNN
 	1    19050 8700
 	0    -1   -1   0   
 $EndComp
-Text Label 10550 8150 0    50   ~ 0
+Text Label 11000 8150 0    50   ~ 0
 SCL
 Text Label 16500 9000 0    50   ~ 0
 SCL
@@ -1184,12 +1180,12 @@ $EndComp
 $Comp
 L PayloadSymbols:Barometer_Grove U?
 U 1 1 6168942A
-P 16850 9950
-F 0 "U?" H 17178 9996 50  0000 L CNN
-F 1 "Barometer_Grove" H 17178 9905 50  0000 L CNN
-F 2 "" H 16850 10250 50  0001 C CNN
-F 3 "" H 16850 10250 50  0001 C CNN
-	1    16850 9950
+P 16850 9850
+F 0 "U?" H 17178 9896 50  0000 L CNN
+F 1 "Barometer_Grove" H 17178 9805 50  0000 L CNN
+F 2 "" H 16850 10150 50  0001 C CNN
+F 3 "" H 16850 10150 50  0001 C CNN
+	1    16850 9850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1351,4 +1347,8 @@ Wire Wire Line
 	18250 4550 18650 4550
 Wire Wire Line
 	18650 4400 18250 4400
+Wire Wire Line
+	10550 8150 11150 8150
+Wire Wire Line
+	11150 8250 10550 8250
 $EndSCHEMATC
