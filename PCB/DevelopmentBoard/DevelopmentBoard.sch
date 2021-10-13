@@ -1240,4 +1240,8 @@ Wire Wire Line
 	5400 6100 5400 6700
 Wire Wire Line
 	5700 6100 5700 6700
+Wire Wire Line
+	18250 2700 18250 2600
+Connection ~ 18250 2700
+Connection ~ 18250 2600
 $EndSCHEMATC
