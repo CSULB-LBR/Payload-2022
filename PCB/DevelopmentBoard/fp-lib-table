@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name PayloadFootprints)(type KiCad)(uri C:/Users/Wasab/Documents/GitHub/Payload-2022-Electrical/PCB/Library/PayloadFootprints.pretty)(options "")(descr ""))
+  (lib (name PayloadFootprints)(type KiCad)(uri "C:/Users/Stati/OneDrive - CSULB/Projects-DESKTOP-05J5TOQ/Clubs and Organizations/LBR/Payload-2022/PCB/Library/PayloadFootprints.pretty")(options "")(descr ""))
+  (lib (name USB3075-30-A)(type KiCad)(uri C:/Users/Stati/Desktop/USB3075-30-A)(options "")(descr ""))
 )

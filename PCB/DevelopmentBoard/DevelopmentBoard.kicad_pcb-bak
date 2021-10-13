@@ -760,7 +760,7 @@
   )
 
   (module PayloadFootprints:Pi_CM4 (layer F.Cu) (tedit 5FE7BB14) (tstamp 6166A949)
-    (at 158.496 84.836 180)
+    (at 162.56 84.582 180)
     (descr "Raspberry Pi 4 Compute Module")
     (tags "Raspberry Pi 4 Compute Module")
     (path /615FC623)
