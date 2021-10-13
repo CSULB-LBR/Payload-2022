@@ -1075,21 +1075,6 @@ MCU_Reset
 Text Notes 17300 5150 0    50   ~ 0
 Low: Reset
 $Comp
-L Device:R_Small_US R7
-U 1 1 616A9425
-P 18550 5150
-F 0 "R7" V 18618 5196 50  0000 L CNN
-F 1 "0" V 18618 5105 50  0000 L CNN
-F 2 "PayloadFootprints:0603" H 18550 5150 50  0001 C CNN
-F 3 "~" H 18550 5150 50  0001 C CNN
-	1    18550 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	18650 5150 18850 5150
-Wire Wire Line
-	17850 5150 18450 5150
-$Comp
 L Device:R_Small_US R10
 U 1 1 616AF564
 P 19850 4400
@@ -1098,17 +1083,6 @@ F 1 "0" H 19918 4355 50  0000 L CNN
 F 2 "PayloadFootprints:0603" H 19850 4400 50  0001 C CNN
 F 3 "~" H 19850 4400 50  0001 C CNN
 	1    19850 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small_US R12
-U 1 1 616B2484
-P 19850 4850
-F 0 "R12" V 19900 4800 50  0000 L CNN
-F 1 "0" V 19900 4750 50  0000 L CNN
-F 2 "PayloadFootprints:0603" H 19850 4850 50  0001 C CNN
-F 3 "~" H 19850 4850 50  0001 C CNN
-	1    19850 4850
 	0    -1   -1   0   
 $EndComp
 Text Notes 20100 4850 0    50   ~ 0
@@ -1125,17 +1099,6 @@ Text Label 18250 4400 0    50   ~ 0
 RX
 Text Label 18250 4550 0    50   ~ 0
 TX
-$Comp
-L Device:R_Small_US R11
-U 1 1 616BF1FF
-P 19850 4700
-F 0 "R11" V 19900 4650 50  0000 L CNN
-F 1 "0" V 19900 4600 50  0000 L CNN
-F 2 "PayloadFootprints:0603" H 19850 4700 50  0001 C CNN
-F 3 "~" H 19850 4700 50  0001 C CNN
-	1    19850 4700
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:R_Small_US R9
 U 1 1 616C63FD
@@ -1240,4 +1203,49 @@ Wire Wire Line
 	5400 6100 5400 6700
 Wire Wire Line
 	5700 6100 5700 6700
+Wire Wire Line
+	18250 2700 18250 2600
+Connection ~ 18250 2700
+Connection ~ 18250 2600
+Wire Wire Line
+	17850 5150 18450 5150
+Wire Wire Line
+	18650 5150 18850 5150
+$Comp
+L Device:R_Small_US R7
+U 1 1 616A9425
+P 18550 5150
+F 0 "R7" V 18618 5196 50  0000 L CNN
+F 1 "0" V 18618 5105 50  0000 L CNN
+F 2 "PayloadFootprints:0603" H 18550 5150 50  0001 C CNN
+F 3 "~" H 18550 5150 50  0001 C CNN
+	1    18550 5150
+	0    1    1    0   
+$EndComp
+Text Label 11150 7050 2    50   ~ 0
+MCU_Reset
+Wire Wire Line
+	11150 7050 10550 7050
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6167D912
+P 19750 4850
+F 0 "TP?" V 19704 5038 50  0000 L CNN
+F 1 "TestPoint" V 19795 5038 50  0000 L CNN
+F 2 "" H 19950 4850 50  0001 C CNN
+F 3 "~" H 19950 4850 50  0001 C CNN
+	1    19750 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6167FD02
+P 19750 4700
+F 0 "TP?" V 19704 4888 50  0000 L CNN
+F 1 "TestPoint" V 19795 4888 50  0000 L CNN
+F 2 "" H 19950 4700 50  0001 C CNN
+F 3 "~" H 19950 4700 50  0001 C CNN
+	1    19750 4700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
