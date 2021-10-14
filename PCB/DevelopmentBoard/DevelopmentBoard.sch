@@ -780,8 +780,6 @@ F 3 "~" H 6150 5800 50  0001 C CNN
 	1    6150 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6150 6100 6150 6700
 Text Label 6150 6700 1    50   ~ 0
 VN-100_CS
 $Comp
@@ -982,17 +980,6 @@ F 3 "" H 18300 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R6
-U 1 1 6168742C
-P 6150 6000
-F 0 "R6" H 6218 6046 50  0000 L CNN
-F 1 "0" H 6218 5955 50  0000 L CNN
-F 2 "PayloadFootprints:0603" H 6150 6000 50  0001 C CNN
-F 3 "~" H 6150 6000 50  0001 C CNN
-	1    6150 6000
-	1    0    0    -1  
-$EndComp
-$Comp
 L PayloadSymbols:Barometer_Grove U2
 U 1 1 6168942A
 P 19600 6250
@@ -1177,36 +1164,6 @@ Text Label 5700 6550 3    50   ~ 0
 SCL
 Text Label 5400 6550 3    50   ~ 0
 SDA
-$Comp
-L Device:R_Small_US R2
-U 1 1 616833BE
-P 5400 6000
-F 0 "R2" H 5468 6046 50  0000 L CNN
-F 1 "0" H 5468 5955 50  0000 L CNN
-F 2 "PayloadFootprints:0603" H 5400 6000 50  0001 C CNN
-F 3 "~" H 5400 6000 50  0001 C CNN
-	1    5400 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R4
-U 1 1 616833C4
-P 5700 6000
-F 0 "R4" H 5768 6046 50  0000 L CNN
-F 1 "0" H 5768 5955 50  0000 L CNN
-F 2 "PayloadFootprints:0603" H 5700 6000 50  0001 C CNN
-F 3 "~" H 5700 6000 50  0001 C CNN
-	1    5700 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 6100 5400 6700
-Wire Wire Line
-	5700 6100 5700 6700
-Wire Wire Line
-	18250 2700 18250 2600
-Connection ~ 18250 2700
-Connection ~ 18250 2600
 Wire Wire Line
 	17850 5150 18450 5150
 Wire Wire Line
@@ -1248,4 +1205,10 @@ F 3 "~" H 19950 4700 50  0001 C CNN
 	1    19750 4700
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	6150 5900 6150 6700
+Wire Wire Line
+	5700 5900 5700 6700
+Wire Wire Line
+	5400 5900 5400 6700
 $EndSCHEMATC
