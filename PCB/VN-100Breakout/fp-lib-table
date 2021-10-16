@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name PayloadFootprints)(type KiCad)(uri "C:/Users/Stati/OneDrive - CSULB/Projects-DESKTOP-05J5TOQ/Clubs and Organizations/LBR/Payload-2022/PCB/Library/PayloadFootprints.pretty")(options "")(descr ""))
+  (lib (name PayloadFootprints)(type KiCad)(uri ${KIPRJMOD}/VN-100Breakout.pretty)(options "")(descr "")(disabled))
+  (lib (name VN-100Breakout)(type KiCad)(uri ${KIPRJMOD}/VN-100Breakout.pretty)(options "")(descr ""))
 )
