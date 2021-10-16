@@ -1,4 +1,4 @@
-update=10/13/2021 7:51:41 PM
+update=10/15/2021 9:24:28 PM
 version=1
 last_client=kicad
 [general]
@@ -58,6 +58,9 @@ ViaDrill3=0.381
 dPairWidth1=0.1524
 dPairGap1=0.254
 dPairViaGap1=0.25
+dPairWidth2=0.4
+dPairGap2=0.18
+dPairViaGap2=0
 SilkLineWidth=0.1524
 SilkTextSizeV=0.8128
 SilkTextSizeH=0.8128
@@ -259,4 +262,15 @@ uViaDiameter=0.6858
 uViaDrill=0.3302
 dPairWidth=0.1524
 dPairGap=0.254
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=USB Data
+Clearance=0.127
+TrackWidth=0.254
+ViaDiameter=0.6858
+ViaDrill=0.3302
+uViaDiameter=0.6858
+uViaDrill=0.3302
+dPairWidth=0.4
+dPairGap=0.18
 dPairViaGap=0.25
