@@ -503,6 +503,11 @@
       (net 3 GND))
     (pad 5 thru_hole circle (at -10.83 -3.5) (size 1.9 1.9) (drill 0.8) (layers *.Cu *.Mask)
       (net 1 "Net-(A1-Pad5)"))
+    (model "C:/Users/Stati/OneDrive - CSULB/Projects-DESKTOP-05J5TOQ/Clubs and Organizations/LBR/Payload-2022-Electrical/PCB/Library/Step Files/TBS_Crossfire_Nano_Diversity.step"
+      (offset (xyz -12 -8.5 3))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module PayloadFootprints:VN-100Breakout (layer Front) (tedit 61677E39) (tstamp 6167032A)
@@ -1342,6 +1347,11 @@
     (pad 3 thru_hole circle (at -2.54 7.62 180) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
       (net 167 "Net-(U3-Pad3)"))
     (pad "" np_thru_hole circle (at 6.6 6.6 180) (size 3 3) (drill 3) (layers *.Cu *.Mask))
+    (model "C:/Users/Stati/OneDrive - CSULB/Projects-DESKTOP-05J5TOQ/Clubs and Organizations/LBR/Payload-2022-Electrical/PCB/Library/Step Files/d24v22fx-step-down-voltage-regulator.step"
+      (offset (xyz -9 -8.5 2))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module PayloadFootprints:GCT_USB3075-30-A (layer Front) (tedit 61664CFA) (tstamp 6168DF66)
