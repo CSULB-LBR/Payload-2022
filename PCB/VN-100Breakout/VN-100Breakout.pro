@@ -1,4 +1,4 @@
-update=10/11/2021 6:05:37 PM
+update=10/15/2021 11:53:31 PM
 version=1
 last_client=kicad
 [general]
@@ -42,7 +42,8 @@ TrackWidth1=0.254
 TrackWidth2=0.127
 TrackWidth3=0.254
 TrackWidth4=0.508
-TrackWidth5=0.762
+TrackWidth5=0.65
+TrackWidth6=0.762
 ViaDiameter1=0.6858
 ViaDrill1=0.3302
 ViaDiameter2=0.6858
@@ -65,7 +66,7 @@ CopperTextThickness=0.3048
 CopperTextItalic=0
 CopperTextUpright=1
 EdgeCutLineWidth=0.03809999999999999
-CourtyardLineWidth=0.0508
+CourtyardLineWidth=0.05
 OthersLineWidth=0.1524
 OthersTextSizeV=1.016
 OthersTextSizeH=1.016
