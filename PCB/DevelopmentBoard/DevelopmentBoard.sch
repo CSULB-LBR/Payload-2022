@@ -793,14 +793,6 @@ F 3 "" H 6150 5700 50  0001 C CNN
 	1    6150 5700
 	1    0    0    -1  
 $EndComp
-Text Label 18200 7500 0    50   ~ 0
-SCL
-Text Label 18200 7400 0    50   ~ 0
-SDA
-Wire Wire Line
-	18200 7400 18850 7400
-Wire Wire Line
-	18200 7500 18850 7500
 Text Label 11000 8250 0    50   ~ 0
 SDA
 $Comp
@@ -1211,4 +1203,28 @@ Wire Wire Line
 	5700 5900 5700 6700
 Wire Wire Line
 	5400 5900 5400 6700
+Wire Wire Line
+	19650 7400 20150 7400
+Wire Wire Line
+	19650 7500 20150 7500
+Wire Wire Line
+	18850 7600 18400 7600
+Text Label 18400 7600 0    50   ~ 0
+SBUS
+Text Label 20150 7400 2    50   ~ 0
+CH1
+Text Label 20150 7500 2    50   ~ 0
+CH2
+Wire Wire Line
+	8150 5750 7550 5750
+Text Label 7550 5750 0    50   ~ 0
+SBUS
+Wire Wire Line
+	8150 5450 7550 5450
+Wire Wire Line
+	8150 5550 7550 5550
+Text Label 7550 5450 0    50   ~ 0
+CH2
+Text Label 7550 5550 0    50   ~ 0
+CH1
 $EndSCHEMATC
