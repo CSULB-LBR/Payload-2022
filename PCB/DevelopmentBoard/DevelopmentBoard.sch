@@ -1278,17 +1278,6 @@ F 3 "" H 20600 5050 50  0001 C CNN
 	1    20600 5050
 	0    1    1    0   
 $EndComp
-$Comp
-L PayloadSymbols:RJ45_Connector_Molex_SMT_MAGwithLED J?
-U 1 1 61762433
-P 19200 10300
-F 0 "J?" H 19200 11317 50  0000 C CNN
-F 1 "RJ45_Connector_Molex_SMT_MAGwithLED" H 19200 11226 50  0000 C CNN
-F 2 "RJ45_Connector_Molex_SMT_MAGwithLED" H 19200 11225 50  0001 C CNN
-F 3 "https://abracon.com/Magnetics/lan/ARJP11A.PDF" H 19050 10225 50  0001 C CNN
-	1    19200 10300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10550 4350 11000 4350
 Wire Wire Line
@@ -1310,20 +1299,51 @@ Wire Wire Line
 Wire Wire Line
 	8150 5050 7650 5050
 Wire Wire Line
-	8150 4950 7650 4950
-Wire Wire Line
 	8150 4750 7650 4750
 Wire Wire Line
 	8150 4650 7650 4650
+Text Label 7650 5150 0    50   ~ 0
+ETH_LED_1
+Text Label 7650 5050 0    50   ~ 0
+ETH_LED_2
+Text Label 7650 4650 0    50   ~ 0
+ETH_P2_N
+Text Label 7650 4750 0    50   ~ 0
+ETH_P2_P
+Text Label 7650 4350 0    50   ~ 0
+ETH_P3_P
+Text Label 7650 4450 0    50   ~ 0
+ETH_P3_N
+Text Label 11000 4450 2    50   ~ 0
+ETH_P1_N
+Text Label 11000 4350 2    50   ~ 0
+ETH_P1_P
+Text Label 11000 4650 2    50   ~ 0
+ETH_P0_N
+Text Label 11000 4750 2    50   ~ 0
+ETH_P0_P
 $Comp
-L power:GND #PWR?
-U 1 1 6178AD00
-P 19900 11400
-F 0 "#PWR?" H 19900 11150 50  0001 C CNN
-F 1 "GND" H 19905 11227 50  0000 C CNN
-F 2 "" H 19900 11400 50  0001 C CNN
-F 3 "" H 19900 11400 50  0001 C CNN
-	1    19900 11400
+L Device:LED D1
+U 1 1 6179A582
+P 7850 8950
+F 0 "D1" H 7843 9167 50  0000 C CNN
+F 1 "LED" H 7843 9076 50  0000 C CNN
+F 2 "DevelopmentBoard:Indicator-LED" H 7850 8950 50  0001 C CNN
+F 3 "~" H 7850 8950 50  0001 C CNN
+	1    7850 8950
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0182
+U 1 1 6179C96B
+P 7700 8950
+F 0 "#PWR0182" H 7700 8700 50  0001 C CNN
+F 1 "GND" H 7705 8777 50  0000 C CNN
+F 2 "" H 7700 8950 50  0001 C CNN
+F 3 "" H 7700 8950 50  0001 C CNN
+	1    7700 8950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 8950 8000 8950
 $EndSCHEMATC

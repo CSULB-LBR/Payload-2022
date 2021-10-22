@@ -1,4 +1,4 @@
-19115038009923485
+19116656724161527
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48803,6 +48803,13 @@ GCT_USB3075-30-A
 0
 11
 8
+DevelopmentBoard
+Indicator-LED
+
+
+0
+2
+2
 DevelopmentBoard
 Molex_0480749101_RJ45_Ethernet
 
