@@ -1,0 +1,163 @@
+Cmp-Mod V01 Created by PcbNew   date = 10/22/2021 11:33:25 PM
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-000061665883
+Path = /00000000-0000-0000-0000-000061620546
+Reference = U3;
+ValeurCmp = D24V22F5;
+IdModule  = DevelopmentBoard:D24V22F5_VoltageRegulator;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-00006172c5c9
+Path = /00000000-0000-0000-0000-00006179a582
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = DevelopmentBoard:Indicator-LED;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-000061672f46
+Path = /00000000-0000-0000-0000-00006166e291
+Reference = R5;
+ValeurCmp = 4.7k;
+IdModule  = DevelopmentBoard:0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-00006173c23c
+Path = /00000000-0000-0000-0000-00006160d975
+Reference = R3;
+ValeurCmp = 4.7k;
+IdModule  = DevelopmentBoard:0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-000061723f35
+Path = /00000000-0000-0000-0000-00006160d96f
+Reference = R1;
+ValeurCmp = 4.7k;
+IdModule  = DevelopmentBoard:0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-000061735545
+Path = /00000000-0000-0000-0000-00006180c683
+Reference = J1;
+ValeurCmp = Conn_01x04_MountingPin;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-000061672ca5
+Path = /00000000-0000-0000-0000-00006160b108
+Reference = U1;
+ValeurCmp = Raspberry-Pi-4-Compute-Module;
+IdModule  = DevelopmentBoard:Pi_CM4;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-0000616886f5
+Path = /00000000-0000-0000-0000-0000616210fe
+Reference = A1;
+ValeurCmp = TBS_Crossfire_RF;
+IdModule  = DevelopmentBoard:TBS_Crossfire_RF;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-0000616a7e08
+Path = /00000000-0000-0000-0000-000061690f0c
+Reference = U5;
+ValeurCmp = VN-100_Breakout;
+IdModule  = DevelopmentBoard:VN-100Breakout;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-00006168df66
+Path = /00000000-0000-0000-0000-00006166969c
+Reference = U4;
+ValeurCmp = Micro-USB;
+IdModule  = DevelopmentBoard:GCT_USB3075-30-A;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-000061734d63
+Path = /00000000-0000-0000-0000-0000617175f8
+Reference = X1;
+ValeurCmp = XT30-M_Connector;
+IdModule  = Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-000061734db1
+Path = /00000000-0000-0000-0000-00006171a8b5
+Reference = X2;
+ValeurCmp = XT30-M_Connector;
+IdModule  = Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-0000616ab021
+Path = /00000000-0000-0000-0000-000061667de2
+Reference = X3;
+ValeurCmp = 2mmGrove_Connector;
+IdModule  = DevelopmentBoard:2mmGrove_Connector;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-00006166a7f4
+Path = /00000000-0000-0000-0000-00006167d912
+Reference = TP2;
+ValeurCmp = TestPoint;
+IdModule  = TestPoint:TestPoint_Pad_D2.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-00006166a7ec
+Path = /00000000-0000-0000-0000-00006167fd02
+Reference = TP1;
+ValeurCmp = TestPoint;
+IdModule  = TestPoint:TestPoint_Pad_D2.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-0000616ac341
+Path = /00000000-0000-0000-0000-00006168942a
+Reference = U2;
+ValeurCmp = Barometer_Grove;
+IdModule  = PayloadFootprints:Barometer_Grove;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-00006169e1bd
+Path = /00000000-0000-0000-0000-0000616a9425
+Reference = R7;
+ValeurCmp = 0;
+IdModule  = PayloadFootprints:0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-00006168f8e5
+Path = /00000000-0000-0000-0000-0000616c79b1
+Reference = R8;
+ValeurCmp = 0;
+IdModule  = PayloadFootprints:0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-00006168f90c
+Path = /00000000-0000-0000-0000-0000616c63fd
+Reference = R9;
+ValeurCmp = 0;
+IdModule  = PayloadFootprints:0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 00000000-0000-0000-0000-00006168f933
+Path = /00000000-0000-0000-0000-0000616af564
+Reference = R10;
+ValeurCmp = 0;
+IdModule  = PayloadFootprints:0603;
+EndCmp
+
+EndListe
