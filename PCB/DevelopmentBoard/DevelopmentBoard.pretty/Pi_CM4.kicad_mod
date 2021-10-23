@@ -1,4 +1,4 @@
-(module Pi_CM4 (layer F.Cu) (tedit 6172BF83)
+(module Pi_CM4 (layer F.Cu) (tedit 6173BF1E)
   (descr "Raspberry Pi 4 Compute Module")
   (tags "Raspberry Pi 4 Compute Module")
   (attr smd)
@@ -301,7 +301,7 @@
     (solder_mask_margin 1.7) (clearance 1.7))
   (pad "" np_thru_hole circle (at -16.5 -26.5) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask)
     (solder_mask_margin 1.7) (clearance 1.7))
-  (model C:/Users/raidr/Documents/Programming/LBR/Payload-2022-Electrical/PCB/DevelopmentBoard/Models/CM4-model.step
+  (model ${KIPRJMOD}/Models/CM4-model-lite.step
     (offset (xyz 36 -25 1))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))
