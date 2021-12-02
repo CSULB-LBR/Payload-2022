@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PayloadSymbols:Pi_CM4 U1
+L DevelopmentBoard:Pi_CM4 U1
 U 1 1 615FC623
 P 8150 4250
 F 0 "U1" H 9350 4537 60  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 8350 4100 60  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PayloadSymbols:Pi_CM4 U1
+L DevelopmentBoard-rescue:Pi_CM4-PayloadSymbols U1
 U 2 1 6160B108
 P 13400 4250
 F 0 "U1" H 14400 4537 60  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 13600 4100 60  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PayloadSymbols:D24V22F5 U3
+L DevelopmentBoard:D24V22F5 U3
 U 1 1 61620546
 P 18900 2750
 F 0 "U3" H 19178 2854 50  0000 L CNN
@@ -847,7 +847,7 @@ F 3 "" H 18850 7300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PayloadSymbols:TBS_Crossfire_RF A1
+L DevelopmentBoard:TBS_Crossfire_RF A1
 U 1 1 616210FE
 P 19250 7500
 F 0 "A1" H 19250 8065 50  0000 C CNN
@@ -858,7 +858,7 @@ F 3 "" H 19250 8000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PayloadSymbols:Micro-USB U4
+L DevelopmentBoard:Micro-USB U4
 U 1 1 6166969C
 P 19150 8700
 F 0 "U4" H 19328 8751 50  0000 L CNN
@@ -939,7 +939,7 @@ F 3 "" H 18050 6250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PayloadSymbols:2mmGrove_Connector X3
+L DevelopmentBoard:2mmGrove_Connector X3
 U 1 1 61667DE2
 P 18300 6300
 F 0 "X3" H 18428 6351 50  0000 L CNN
@@ -950,7 +950,7 @@ F 3 "" H 18300 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PayloadSymbols:Barometer_Grove U2
+L DevelopmentBoard-rescue:Barometer_Grove-PayloadSymbols U2
 U 1 1 6168942A
 P 19600 6250
 F 0 "U2" H 19928 6296 50  0000 L CNN
@@ -972,7 +972,7 @@ F 3 "" H 18950 8450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PayloadSymbols:VN-100_Breakout U5
+L DevelopmentBoard:VN-100_Breakout U5
 U 1 1 61690F0C
 P 19300 4900
 F 0 "U5" H 19300 5665 50  0000 C CNN
@@ -1206,7 +1206,7 @@ CH2
 Text Label 7550 5550 0    50   ~ 0
 CH1
 $Comp
-L PayloadSymbols:XT30-M_Connector X1
+L DevelopmentBoard-rescue:XT30-M_Connector-PayloadSymbols X1
 U 1 1 617175F8
 P 18000 2250
 F 0 "X1" H 17992 1985 50  0000 C CNN
@@ -1219,7 +1219,7 @@ $EndComp
 Wire Wire Line
 	18250 2200 18150 2200
 $Comp
-L PayloadSymbols:XT30-M_Connector X2
+L DevelopmentBoard-rescue:XT30-M_Connector-PayloadSymbols X2
 U 1 1 6171A8B5
 P 18100 2650
 F 0 "X2" H 18092 2385 50  0000 C CNN
@@ -1230,7 +1230,7 @@ F 3 "" H 18050 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PayloadSymbols:Conn_01x04_MountingPin J1
+L DevelopmentBoard-rescue:Conn_01x04_MountingPin-PayloadSymbols J1
 U 1 1 6180C683
 P 20850 5150
 F 0 "J1" H 20938 5064 50  0000 L CNN

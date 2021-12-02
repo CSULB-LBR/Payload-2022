@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name PayloadSymbols)(type Legacy)(uri ${KIPRJMOD}/DevelopmentBoard.lib)(options "")(descr ""))
+  (lib (name DevelopmentBoard)(type Legacy)(uri ${KIPRJMOD}/DevelopmentBoard.lib)(options "")(descr ""))
+  (lib (name DevelopmentBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/DevelopmentBoard-rescue.lib)(options "")(descr ""))
 )
