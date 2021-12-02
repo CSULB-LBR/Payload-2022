@@ -1,4 +1,4 @@
-19238963728856707
+19240602173291584
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48796,6 +48796,13 @@ D24V22F5_VoltageRegulator
 0
 6
 6
+DevelopmentBoard
+FE1.1S_USB_Controller
+
+
+0
+28
+28
 DevelopmentBoard
 GCT_USB3075-30-A
 
