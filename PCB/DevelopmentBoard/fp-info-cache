@@ -1,4 +1,4 @@
-19242240623888298
+19243879081897240
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48789,6 +48789,13 @@ Barometer_Grove
 0
 3
 0
+DevelopmentBoard
+CUI_CRJ007_RJ45
+
+
+0
+16
+16
 DevelopmentBoard
 D24V22F5_VoltageRegulator
 
