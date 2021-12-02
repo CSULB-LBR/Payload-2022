@@ -873,17 +873,17 @@ Wire Wire Line
 Wire Wire Line
 	13400 4450 12850 4450
 Text Label 12850 4350 0    50   ~ 0
-D-
+D0-
 Text Label 12850 4450 0    50   ~ 0
-D+
+D0+
 Wire Wire Line
 	18500 8650 18200 8650
 Text Label 18200 8650 0    50   ~ 0
-D-
+D0-
 Wire Wire Line
 	18500 8750 18200 8750
 Text Label 18200 8750 0    50   ~ 0
-D+
+D0+
 $Comp
 L power:GND #PWR0169
 U 1 1 61678318
@@ -1386,4 +1386,16 @@ Wire Wire Line
 	18700 8650 18950 8650
 Wire Wire Line
 	18700 8750 18950 8750
+$Comp
+L DevelopmentBoard:USB-A J?
+U 1 1 61A94DB1
+P 20750 11050
+F 0 "J?" H 20980 11096 50  0000 L CNN
+F 1 "USB-A" H 20980 11005 50  0000 L CNN
+F 2 "" H 21250 10800 50  0001 L BNN
+F 3 "" H 20750 11050 50  0001 L BNN
+F 4 "T" H 20750 11050 50  0001 L BNN "PARTREV"
+	1    20750 11050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
