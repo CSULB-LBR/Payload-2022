@@ -301,10 +301,10 @@ ENDDEF
 #
 # DevelopmentBoard_CRJ007_RJ45
 #
-DEF DevelopmentBoard_CRJ007_RJ45 J 0 40 Y Y 1 L N
+DEF DevelopmentBoard_CRJ007_RJ45 J 0 40 Y Y 1 F N
 F0 "J" -400 1150 50 H V L BNN
 F1 "DevelopmentBoard_CRJ007_RJ45" -400 -1150 50 H V L BNN
-F2 "" 0 0 50 H I L BNN
+F2 "DevelopmentBoard:CUI_CRJ007_RJ45" 0 0 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
 DRAW
 T 0 85 -630 40 0 0 0 GN Normal 0 L T

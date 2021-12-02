@@ -1,4 +1,4 @@
-19243879081897240
+19242244135213620
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48824,13 +48824,6 @@ Indicator-LED
 0
 2
 2
-DevelopmentBoard
-Molex_0480749101_RJ45_Ethernet
-
-
-0
-14
-13
 DevelopmentBoard
 Pi_CM4
 Raspberry Pi 4 Compute Module
