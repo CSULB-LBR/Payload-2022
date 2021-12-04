@@ -1,4 +1,4 @@
-19097062561969012
+19098672157784415
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51582,6 +51582,13 @@ EBOOT-MP1584EN-5N-POWER-SUPPLY
 0
 8
 4
+GPS Board
+XBEE-20_THT
+https://www.digi.com/pdf/ds_xbeemultipointmodules.pdf
+
+0
+20
+20
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
