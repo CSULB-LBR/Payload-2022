@@ -1,4 +1,4 @@
-update=12/2/2021 9:44:57 AM
+update=12/3/2021 7:34:14 PM
 version=1
 last_client=kicad
 [general]
@@ -42,7 +42,7 @@ TrackWidth1=0.254
 TrackWidth2=0.127
 TrackWidth3=0.2
 TrackWidth4=0.254
-TrackWidth5=0.375
+TrackWidth5=0.3
 TrackWidth6=0.4
 TrackWidth7=0.508
 TrackWidth8=0.762
