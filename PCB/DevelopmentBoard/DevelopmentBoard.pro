@@ -1,4 +1,4 @@
-update=12/3/2021 11:29:51 PM
+update=12/4/2021 1:17:39 AM
 version=1
 last_client=kicad
 [general]
@@ -281,6 +281,17 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=ETH_P2
+Clearance=0.127
+TrackWidth=0.4
+ViaDiameter=0.6858
+ViaDrill=0.3302
+uViaDiameter=0.6858
+uViaDrill=0.3302
+dPairWidth=0.4
+dPairGap=0.254
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
+Name=ETH_P3
 Clearance=0.127
 TrackWidth=0.4
 ViaDiameter=0.6858
