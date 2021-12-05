@@ -2004,4 +2004,45 @@ F 3 "" H 8350 4100 60  0001 L CNN
 	1    8150 4250
 	1    0    0    -1  
 $EndComp
+$Comp
+L DevelopmentBoard-rescue:Conn_01x04_MountingPin-PayloadSymbols J5
+U 1 1 61D8B1FD
+P 4800 9950
+F 0 "J5" H 4888 9864 50  0000 L CNN
+F 1 "Conn_01x04_MountingPin" H 4888 9773 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4800 9950 50  0001 C CNN
+F 3 "~" H 4800 9950 50  0001 C CNN
+	1    4800 9950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0207
+U 1 1 61DC5E51
+P 5000 10050
+F 0 "#PWR0207" H 5000 9800 50  0001 C CNN
+F 1 "GND" V 5005 9922 50  0000 R CNN
+F 2 "" H 5000 10050 50  0001 C CNN
+F 3 "" H 5000 10050 50  0001 C CNN
+	1    5000 10050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0208
+U 1 1 61DC74CC
+P 5000 9950
+F 0 "#PWR0208" H 5000 9800 50  0001 C CNN
+F 1 "+5V" V 5015 10078 50  0000 L CNN
+F 2 "" H 5000 9950 50  0001 C CNN
+F 3 "" H 5000 9950 50  0001 C CNN
+	1    5000 9950
+	0    1    1    0   
+$EndComp
+Text Label 5250 9850 2    50   ~ 0
+SCL
+Text Label 5250 9750 2    50   ~ 0
+SDA
+Wire Wire Line
+	5000 9850 5250 9850
+Wire Wire Line
+	5000 9750 5250 9750
 $EndSCHEMATC

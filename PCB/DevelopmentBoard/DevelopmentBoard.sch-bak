@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L DevelopmentBoard:Pi_CM4 U1
-U 1 1 615FC623
-P 8150 4250
-F 0 "U1" H 9350 4537 60  0000 C CNN
-F 1 "Pi_CM4" H 9350 4431 60  0000 C CNN
-F 2 "DevelopmentBoard:Pi_CM4" H 8350 4300 60  0001 L CNN
-F 3 "" H 8350 4100 60  0001 L CNN
-	1    8150 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L DevelopmentBoard-rescue:Pi_CM4-PayloadSymbols U1
 U 2 1 6160B108
 P 13400 4250
@@ -2004,4 +1993,56 @@ Wire Wire Line
 Wire Wire Line
 	19700 9950 19700 10350
 Connection ~ 19900 9950
+$Comp
+L DevelopmentBoard:Pi_CM4 U1
+U 1 1 615FC623
+P 8150 4250
+F 0 "U1" H 9350 4537 60  0000 C CNN
+F 1 "Pi_CM4" H 9350 4431 60  0000 C CNN
+F 2 "DevelopmentBoard:Pi_CM4" H 8350 4300 60  0001 L CNN
+F 3 "" H 8350 4100 60  0001 L CNN
+	1    8150 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L DevelopmentBoard-rescue:Conn_01x04_MountingPin-PayloadSymbols J?
+U 1 1 61D8B1FD
+P 4800 9950
+F 0 "J?" H 4888 9864 50  0000 L CNN
+F 1 "Conn_01x04_MountingPin" H 4888 9773 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4800 9950 50  0001 C CNN
+F 3 "~" H 4800 9950 50  0001 C CNN
+	1    4800 9950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61DC5E51
+P 5000 10050
+F 0 "#PWR?" H 5000 9800 50  0001 C CNN
+F 1 "GND" V 5005 9922 50  0000 R CNN
+F 2 "" H 5000 10050 50  0001 C CNN
+F 3 "" H 5000 10050 50  0001 C CNN
+	1    5000 10050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61DC74CC
+P 5000 9950
+F 0 "#PWR?" H 5000 9800 50  0001 C CNN
+F 1 "+5V" V 5015 10078 50  0000 L CNN
+F 2 "" H 5000 9950 50  0001 C CNN
+F 3 "" H 5000 9950 50  0001 C CNN
+	1    5000 9950
+	0    1    1    0   
+$EndComp
+Text Label 5250 9850 2    50   ~ 0
+SCL
+Text Label 5250 9750 2    50   ~ 0
+SDA
+Wire Wire Line
+	5000 9850 5250 9850
+Wire Wire Line
+	5000 9750 5250 9750
 $EndSCHEMATC
