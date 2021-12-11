@@ -83,7 +83,7 @@ U 1 1 61AAF79D
 P 6000 3900
 F 0 "A2" H 6050 4640 50  0000 C CNN
 F 1 "Sparkfun-GPS-Breakout" H 6050 4549 50  0000 C CNN
-F 2 "" H 6000 3900 50  0001 C CNN
+F 2 "GPS Board:Sparkfun-GPS-ZOE-M8Q-Breakout" H 6000 3900 50  0001 C CNN
 F 3 "" H 6000 3900 50  0001 C CNN
 	1    6000 3900
 	1    0    0    -1  
@@ -348,16 +348,6 @@ Wire Wire Line
 Wire Wire Line
 	5375 3200 4000 3200
 Wire Wire Line
-	6150 1875 6650 1875
-Wire Wire Line
-	6650 1875 6650 850 
-Wire Wire Line
-	6650 850  1375 850 
-Wire Wire Line
-	1375 850  1375 2600
-Wire Wire Line
-	1375 2600 1800 2600
-Wire Wire Line
 	1800 2500 1475 2500
 Wire Wire Line
 	1475 2500 1475 950 
@@ -378,17 +368,33 @@ Wire Wire Line
 Wire Wire Line
 	4550 2700 4000 2700
 Wire Wire Line
-	6150 1775 6150 1825
-Wire Wire Line
-	6150 2925 4525 2925
-Wire Wire Line
 	4525 2925 4525 3700
 Wire Wire Line
 	4525 3700 4000 3700
-Connection ~ 6150 1825
+Text GLabel 6225 1875 2    50   Input ~ 0
+MOSI
 Wire Wire Line
-	6150 1825 6150 1875
-Connection ~ 6150 1875
+	6150 1875 6225 1875
 Wire Wire Line
-	6150 1875 6150 2925
+	6150 1775 6525 1775
+Wire Wire Line
+	4525 2925 6525 2925
+Wire Wire Line
+	6525 1775 6525 2925
+Text GLabel 1725 2600 0    50   Input ~ 0
+MOSI
+Wire Wire Line
+	1800 2600 1725 2600
+$Comp
+L power:GND #PWR?
+U 1 1 61BA5EBA
+P 7075 1550
+F 0 "#PWR?" H 7075 1300 50  0001 C CNN
+F 1 "GND" H 7080 1377 50  0000 C CNN
+F 2 "" H 7075 1550 50  0001 C CNN
+F 3 "" H 7075 1550 50  0001 C CNN
+	1    7075 1550
+	-1   0    0    1   
+$EndComp
+Connection ~ 7075 1550
 $EndSCHEMATC
