@@ -382,9 +382,7 @@ Wire Wire Line
 Wire Wire Line
 	4975 5425 1525 5425
 Wire Wire Line
-	1525 5425 1525 3400
-Wire Wire Line
-	1525 3400 1800 3400
+	1525 5425 1525 3300
 Wire Wire Line
 	5425 4000 5125 4000
 Wire Wire Line
@@ -392,11 +390,13 @@ Wire Wire Line
 Wire Wire Line
 	5125 5550 1425 5550
 Wire Wire Line
-	1425 5550 1425 3300
-Wire Wire Line
-	1425 3300 1800 3300
-Wire Wire Line
 	1150 5825 1150 2500
 Wire Wire Line
 	1150 2500 1800 2500
+Wire Wire Line
+	1800 3300 1525 3300
+Wire Wire Line
+	1800 3400 1425 3400
+Wire Wire Line
+	1425 3400 1425 5550
 $EndSCHEMATC
