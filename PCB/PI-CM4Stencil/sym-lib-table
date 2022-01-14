@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PI-CM4Stencil)(type Legacy)(uri ${KIPRJMOD}/PI-CM4Stencil.lib)(options "")(descr ""))
+)

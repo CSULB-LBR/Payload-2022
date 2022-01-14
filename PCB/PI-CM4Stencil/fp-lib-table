@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name PI-CM4Stencil)(type KiCad)(uri ${KIPRJMOD}/PI-CM4Stencil.pretty)(options "")(descr ""))
+)
