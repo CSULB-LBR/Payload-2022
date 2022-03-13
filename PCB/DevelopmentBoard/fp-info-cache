@@ -1,4 +1,4 @@
-18756424409869321
+18758071619495407
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48544,6 +48544,13 @@ Indicator-LED
 0
 2
 2
+DevelopmentBoard
+MODULE_RASPBERRY_PI_3_MODEL_B+
+
+
+0
+44
+44
 DevelopmentBoard
 PayloadLogo
 
