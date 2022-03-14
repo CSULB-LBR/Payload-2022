@@ -1353,8 +1353,6 @@ F 4 "T" H 7700 8950 50  0001 L BNN "PARTREV"
 	1    7700 8950
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5150 5100 5150 5000
 $Comp
 L DevelopmentBoard:CRJ007_RJ45 J4
 U 1 1 61DEA568
@@ -2146,9 +2144,6 @@ Text Notes 6600 10200 0    98   ~ 0
 GPIO Pins
 Text Label 2000 17900 1    50   ~ 0
 SCL
-Connection ~ 5150 5000
-Wire Wire Line
-	5150 5000 5150 4900
 $Comp
 L DevelopmentBoard:Micro-USB U4
 U 1 1 6166969C
@@ -2229,4 +2224,6 @@ Wire Wire Line
 	7400 7800 7700 7800
 Text Notes 1250 16700 0    98   ~ 0
 SPI and I2C Pullups
+Wire Wire Line
+	5150 5000 5150 5200
 $EndSCHEMATC
