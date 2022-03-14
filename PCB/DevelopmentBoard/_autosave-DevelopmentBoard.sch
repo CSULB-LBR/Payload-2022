@@ -1,0 +1,623 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 16535 23386 portrait
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 1950 13800 0    50   ~ 0
+VN-100_SCK
+Wire Wire Line
+	1950 13800 2550 13800
+Wire Wire Line
+	1950 13950 2550 13950
+Text Label 1950 13950 0    50   ~ 0
+VN-100_MOSI
+Wire Wire Line
+	2550 14100 1950 14100
+Text Label 1950 14100 0    50   ~ 0
+VN-100_MISO
+Text Label 1950 14550 0    50   ~ 0
+VN-100_CS
+$Comp
+L Device:R_Small_US R5
+U 1 1 6166E291
+P 2400 17100
+F 0 "R5" H 2468 17146 50  0000 L CNN
+F 1 "4.7k" H 2468 17055 50  0000 L CNN
+F 2 "DevelopmentBoard:0603" H 2400 17100 50  0001 C CNN
+F 3 "~" H 2400 17100 50  0001 C CNN
+	1    2400 17100
+	1    0    0    -1  
+$EndComp
+Text Label 2400 17900 1    50   ~ 0
+VN-100_CS
+$Comp
+L power:+3.3V #PWR0163
+U 1 1 61670634
+P 2400 17000
+F 0 "#PWR0163" H 2400 16850 50  0001 C CNN
+F 1 "+3.3V" H 2415 17173 50  0000 C CNN
+F 2 "" H 2400 17000 50  0001 C CNN
+F 3 "" H 2400 17000 50  0001 C CNN
+	1    2400 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 61619131
+P 4400 15500
+F 0 "#PWR0164" H 4400 15250 50  0001 C CNN
+F 1 "GND" V 4400 15400 50  0000 R CNN
+F 2 "" H 4400 15500 50  0001 C CNN
+F 3 "" H 4400 15500 50  0001 C CNN
+	1    4400 15500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0165
+U 1 1 6161BA5A
+P 4400 15600
+F 0 "#PWR0165" H 4400 15450 50  0001 C CNN
+F 1 "+5V" V 4400 15700 50  0000 L CNN
+F 2 "" H 4400 15600 50  0001 C CNN
+F 3 "" H 4400 15600 50  0001 C CNN
+	1    4400 15600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0166
+U 1 1 61656710
+P 1850 15350
+F 0 "#PWR0166" H 1850 15100 50  0001 C CNN
+F 1 "GND" V 1855 15222 50  0000 R CNN
+F 2 "" H 1850 15350 50  0001 C CNN
+F 3 "" H 1850 15350 50  0001 C CNN
+	1    1850 15350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR0167
+U 1 1 61660D0C
+P 1850 15450
+F 0 "#PWR0167" H 1850 15300 50  0001 C CNN
+F 1 "+12V" V 1865 15623 50  0000 C CNN
+F 2 "" H 1850 15450 50  0001 C CNN
+F 3 "" H 1850 15450 50  0001 C CNN
+	1    1850 15450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 15450 1850 15450
+$Comp
+L power:GND #PWR0168
+U 1 1 6161AEF3
+P 3600 15600
+F 0 "#PWR0168" H 3600 15350 50  0001 C CNN
+F 1 "GND" V 3605 15472 50  0000 R CNN
+F 2 "" H 3600 15600 50  0001 C CNN
+F 3 "" H 3600 15600 50  0001 C CNN
+	1    3600 15600
+	0    1    1    0   
+$EndComp
+$Comp
+L DevelopmentBoard:TBS_Crossfire_RF A1
+U 1 1 616210FE
+P 4000 15800
+F 0 "A1" H 4000 16365 50  0000 C CNN
+F 1 "TBS_Crossfire_RF" H 4000 16274 50  0000 C CNN
+F 2 "DevelopmentBoard:TBS_Crossfire_RF" H 4000 16300 50  0001 C CNN
+F 3 "" H 4000 16300 50  0001 C CNN
+	1    4000 15800
+	1    0    0    -1  
+$EndComp
+Text Label 3550 17550 0    50   ~ 0
+SCL
+Text Label 3550 17450 0    50   ~ 0
+SDA
+Wire Wire Line
+	3900 17450 3550 17450
+$Comp
+L power:GND #PWR0171
+U 1 1 616717DD
+P 3900 17250
+F 0 "#PWR0171" H 3900 17000 50  0001 C CNN
+F 1 "GND" V 3905 17122 50  0000 R CNN
+F 2 "" H 3900 17250 50  0001 C CNN
+F 3 "" H 3900 17250 50  0001 C CNN
+	1    3900 17250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0172
+U 1 1 6167029D
+P 3900 17350
+F 0 "#PWR0172" H 3900 17200 50  0001 C CNN
+F 1 "+5V" V 3915 17478 50  0000 L CNN
+F 2 "" H 3900 17350 50  0001 C CNN
+F 3 "" H 3900 17350 50  0001 C CNN
+	1    3900 17350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DevelopmentBoard:2mmGrove_Connector X3
+U 1 1 61667DE2
+P 4150 17400
+F 0 "X3" H 4050 17800 50  0000 L CNN
+F 1 "2mmGrove_Connector" H 3550 17700 50  0000 L CNN
+F 2 "DevelopmentBoard:2mmGrove_Connector" H 4150 17400 50  0001 C CNN
+F 3 "" H 4150 17400 50  0001 C CNN
+	1    4150 17400
+	1    0    0    -1  
+$EndComp
+$Comp
+L DevelopmentBoard-rescue:Barometer_Grove-PayloadSymbols U2
+U 1 1 6168942A
+P 19600 6250
+F 0 "U2" H 19928 6296 50  0000 L CNN
+F 1 "Barometer_Grove" H 19928 6205 50  0000 L CNN
+F 2 "PayloadFootprints:Barometer_Grove" H 19600 6550 50  0001 C CNN
+F 3 "" H 19600 6550 50  0001 C CNN
+	1    19600 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L DevelopmentBoard:VN-100_Breakout U5
+U 1 1 61690F0C
+P 3000 14000
+F 0 "U5" H 3000 14765 50  0000 C CNN
+F 1 "VN-100_Breakout" H 3000 14674 50  0000 C CNN
+F 2 "DevelopmentBoard:VN-100Breakout" H 3050 14300 50  0001 C CNN
+F 3 "" H 3050 14300 50  0001 C CNN
+	1    3000 14000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0174
+U 1 1 61695526
+P 3450 14400
+F 0 "#PWR0174" H 3450 14150 50  0001 C CNN
+F 1 "GND" V 3455 14272 50  0000 R CNN
+F 2 "" H 3450 14400 50  0001 C CNN
+F 3 "" H 3450 14400 50  0001 C CNN
+	1    3450 14400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0175
+U 1 1 61696514
+P 3450 14550
+F 0 "#PWR0175" H 3450 14300 50  0001 C CNN
+F 1 "GND" V 3455 14422 50  0000 R CNN
+F 2 "" H 3450 14550 50  0001 C CNN
+F 3 "" H 3450 14550 50  0001 C CNN
+	1    3450 14550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0176
+U 1 1 61697332
+P 3450 13650
+F 0 "#PWR0176" H 3450 13500 50  0001 C CNN
+F 1 "+5V" V 3465 13778 50  0000 L CNN
+F 2 "" H 3450 13650 50  0001 C CNN
+F 3 "" H 3450 13650 50  0001 C CNN
+	1    3450 13650
+	0    1    1    0   
+$EndComp
+Text Notes 3800 13600 0    50   ~ 0
+Low: Disable\n
+Text Label 4300 13500 2    50   ~ 0
+VN-100_Enable
+Wire Wire Line
+	3650 13500 4300 13500
+Wire Wire Line
+	1950 14550 2550 14550
+Text Label 1550 14250 0    50   ~ 0
+MCU_Reset
+Text Notes 1550 14350 0    50   ~ 0
+Low: Reset
+$Comp
+L Device:R_Small_US R10
+U 1 1 616AF564
+P 3550 13500
+F 0 "R10" H 3618 13546 50  0000 L CNN
+F 1 "0" H 3618 13455 50  0000 L CNN
+F 2 "DevelopmentBoard:0603" H 3550 13500 50  0001 C CNN
+F 3 "~" H 3550 13500 50  0001 C CNN
+	1    3550 13500
+	0    -1   -1   0   
+$EndComp
+Text Label 1950 13500 0    50   ~ 0
+RX1
+Text Label 1950 13650 0    50   ~ 0
+TX1
+$Comp
+L Device:R_Small_US R9
+U 1 1 616C63FD
+P 2450 13650
+F 0 "R9" V 2518 13696 50  0000 L CNN
+F 1 "0" V 2518 13605 50  0000 L CNN
+F 2 "DevelopmentBoard:0603" H 2450 13650 50  0001 C CNN
+F 3 "~" H 2450 13650 50  0001 C CNN
+	1    2450 13650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R8
+U 1 1 616C79B1
+P 2450 13500
+F 0 "R8" V 2518 13546 50  0000 L CNN
+F 1 "0" V 2518 13455 50  0000 L CNN
+F 2 "DevelopmentBoard:0603" H 2450 13500 50  0001 C CNN
+F 3 "~" H 2450 13500 50  0001 C CNN
+	1    2450 13500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 13650 2350 13650
+Wire Wire Line
+	2350 13500 1950 13500
+$Comp
+L power:+3.3V #PWR0177
+U 1 1 6160D985
+P 2000 17000
+F 0 "#PWR0177" H 2000 16850 50  0001 C CNN
+F 1 "+3.3V" H 2015 17173 50  0000 C CNN
+F 2 "" H 2000 17000 50  0001 C CNN
+F 3 "" H 2000 17000 50  0001 C CNN
+	1    2000 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0178
+U 1 1 6160D97F
+P 1600 17000
+F 0 "#PWR0178" H 1600 16850 50  0001 C CNN
+F 1 "+3.3V" H 1615 17173 50  0000 C CNN
+F 2 "" H 1600 17000 50  0001 C CNN
+F 3 "" H 1600 17000 50  0001 C CNN
+	1    1600 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 6160D96F
+P 1600 17100
+F 0 "R1" H 1668 17146 50  0000 L CNN
+F 1 "4.7k" H 1668 17055 50  0000 L CNN
+F 2 "DevelopmentBoard:0603" H 1600 17100 50  0001 C CNN
+F 3 "~" H 1600 17100 50  0001 C CNN
+	1    1600 17100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 6160D975
+P 2000 17100
+F 0 "R3" H 2068 17146 50  0000 L CNN
+F 1 "4.7k" H 2068 17055 50  0000 L CNN
+F 2 "DevelopmentBoard:0603" H 2000 17100 50  0001 C CNN
+F 3 "~" H 2000 17100 50  0001 C CNN
+	1    2000 17100
+	1    0    0    -1  
+$EndComp
+Text Label 1600 17900 1    50   ~ 0
+SDA
+Wire Wire Line
+	1550 14250 2150 14250
+Wire Wire Line
+	2350 14250 2550 14250
+$Comp
+L Device:R_Small_US R7
+U 1 1 616A9425
+P 2250 14250
+F 0 "R7" V 2318 14296 50  0000 L CNN
+F 1 "0" V 2318 14205 50  0000 L CNN
+F 2 "DevelopmentBoard:0603" H 2250 14250 50  0001 C CNN
+F 3 "~" H 2250 14250 50  0001 C CNN
+	1    2250 14250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6167D912
+P 3450 13950
+F 0 "TP2" V 3404 14138 50  0000 L CNN
+F 1 "TestPoint" V 3495 14138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3650 13950 50  0001 C CNN
+F 3 "~" H 3650 13950 50  0001 C CNN
+	1    3450 13950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6167FD02
+P 3450 13800
+F 0 "TP1" V 3404 13988 50  0000 L CNN
+F 1 "TestPoint" V 3495 13988 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3650 13800 50  0001 C CNN
+F 3 "~" H 3650 13800 50  0001 C CNN
+	1    3450 13800
+	0    1    1    0   
+$EndComp
+Text Label 3200 15900 0    50   ~ 0
+SBUS
+Text Label 4800 15700 2    50   ~ 0
+CH1
+Text Label 4800 15800 2    50   ~ 0
+CH2
+$Comp
+L DevelopmentBoard-rescue:XT30-M_Connector-PayloadSymbols X1
+U 1 1 617175F8
+P 1600 15400
+F 0 "X1" H 1800 15500 50  0000 C CNN
+F 1 "XT30" H 1850 15400 50  0000 C CNN
+F 2 "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical" H 1550 15400 50  0001 C CNN
+F 3 "" H 1550 15400 50  0001 C CNN
+	1    1600 15400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 15350 1750 15350
+$Comp
+L DevelopmentBoard-rescue:Conn_01x04_MountingPin-PayloadSymbols J1
+U 1 1 6180C683
+P 6050 10950
+F 0 "J1" H 6138 10864 50  0000 L CNN
+F 1 "Conn_01x04_MountingPin" H 5400 10600 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6050 10950 50  0001 C CNN
+F 3 "~" H 6050 10950 50  0001 C CNN
+	1    6050 10950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 10750 6250 10750
+Wire Wire Line
+	6250 11050 6300 11050
+Wire Wire Line
+	6250 10950 6300 10950
+$Comp
+L power:+5V #PWR0179
+U 1 1 61815BF7
+P 6300 10950
+F 0 "#PWR0179" H 6300 10800 50  0001 C CNN
+F 1 "+5V" V 6315 11078 50  0000 L CNN
+F 2 "" H 6300 10950 50  0001 C CNN
+F 3 "" H 6300 10950 50  0001 C CNN
+	1    6300 10950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0180
+U 1 1 6181C68D
+P 6300 11050
+F 0 "#PWR0180" H 6300 10800 50  0001 C CNN
+F 1 "GND" V 6305 10922 50  0000 R CNN
+F 2 "" H 6300 11050 50  0001 C CNN
+F 3 "" H 6300 11050 50  0001 C CNN
+	1    6300 11050
+	0    -1   -1   0   
+$EndComp
+Text Notes 5800 -200 0    50   ~ 0
+The USB Controller has internal 3.3v and 1.8v LDOs.\nThe inputs and outputs of each are connected \nto each other for "Self-Powered" Mode.\n\n
+Wire Wire Line
+	3900 17550 3550 17550
+Text Label 6500 10750 2    50   ~ 0
+TX2
+Wire Wire Line
+	6500 10850 6250 10850
+Text Label 6500 10850 2    50   ~ 0
+RX2
+Wire Wire Line
+	3700 14100 3450 14100
+Text Label 3700 14100 2    50   ~ 0
+TX2
+Wire Wire Line
+	3700 14250 3450 14250
+Text Label 3700 14250 2    50   ~ 0
+RX2
+Wire Wire Line
+	1750 15750 1750 15450
+Connection ~ 1750 15450
+Wire Notes Line
+	5000 1000 5000 22500
+Wire Notes Line
+	1000 22500 1000 1000
+Wire Notes Line
+	1000 1000 9000 1000
+Wire Notes Line
+	9000 1000 9000 22500
+Wire Notes Line
+	1000 22500 9000 22500
+Wire Wire Line
+	4400 15700 4800 15700
+Wire Wire Line
+	4400 15800 4800 15800
+Wire Wire Line
+	3600 15900 3200 15900
+$Comp
+L DevelopmentBoard-rescue:XT30-M_Connector-PayloadSymbols X2
+U 1 1 6171A8B5
+P 1600 15800
+F 0 "X2" H 1800 15900 50  0000 C CNN
+F 1 "XT30" H 1850 15800 50  0000 C CNN
+F 2 "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical" H 1550 15800 50  0001 C CNN
+F 3 "" H 1550 15800 50  0001 C CNN
+	1    1600 15800
+	-1   0    0    1   
+$EndComp
+Text Notes 2100 13000 0    98   ~ 0
+Inertial Navigation System
+Wire Notes Line
+	1000 14850 5000 14850
+Text Notes 2100 1200 0    98   ~ 0
+Raspberry Pi Connector A
+Wire Notes Line
+	1000 16500 5000 16500
+Wire Notes Line
+	3000 14850 3000 18000
+Wire Notes Line
+	1000 18000 5000 18000
+Text Notes 1350 15100 0    98   ~ 0
+Voltage Regulator\n
+Text Notes 3550 15100 0    98   ~ 0
+RF Receiver
+Wire Wire Line
+	1600 17200 1600 17900
+Wire Wire Line
+	2000 17200 2000 17900
+Wire Wire Line
+	2400 17200 2400 17900
+Text Notes 3650 16700 0    98   ~ 0
+Altimeter
+Wire Notes Line
+	5000 4000 9000 4000
+Wire Notes Line
+	1000 6950 9000 6950
+Text Notes 6450 4200 0    98   ~ 0
+USB Controller
+Text Notes 6550 7150 0    98   ~ 0
+USB Ports
+Wire Notes Line
+	1000 12800 9000 12800
+Wire Notes Line
+	5000 10000 9000 10000
+Wire Wire Line
+	7750 10750 8000 10750
+Wire Wire Line
+	7750 10850 8000 10850
+Text Label 8000 10750 2    50   ~ 0
+SDA
+Text Label 8000 10850 2    50   ~ 0
+SCL
+$Comp
+L power:+5V #PWR0208
+U 1 1 61DC74CC
+P 7750 10950
+F 0 "#PWR0208" H 7750 10800 50  0001 C CNN
+F 1 "+5V" V 7765 11078 50  0000 L CNN
+F 2 "" H 7750 10950 50  0001 C CNN
+F 3 "" H 7750 10950 50  0001 C CNN
+	1    7750 10950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0207
+U 1 1 61DC5E51
+P 7750 11050
+F 0 "#PWR0207" H 7750 10800 50  0001 C CNN
+F 1 "GND" V 7755 10922 50  0000 R CNN
+F 2 "" H 7750 11050 50  0001 C CNN
+F 3 "" H 7750 11050 50  0001 C CNN
+	1    7750 11050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DevelopmentBoard-rescue:Conn_01x04_MountingPin-PayloadSymbols J5
+U 1 1 61D8B1FD
+P 7550 10950
+F 0 "J5" H 7638 10864 50  0000 L CNN
+F 1 "Conn_01x04_MountingPin" H 6900 10600 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7550 10950 50  0001 C CNN
+F 3 "~" H 7550 10950 50  0001 C CNN
+	1    7550 10950
+	-1   0    0    1   
+$EndComp
+Text Notes 6600 10200 0    98   ~ 0
+GPIO Pins
+Text Label 2000 17900 1    50   ~ 0
+SCL
+Text Notes 1250 16700 0    98   ~ 0
+SPI and I2C Pullups
+$Comp
+L DevelopmentBoard:D24V22F5_VoltageRegulator U?
+U 1 1 62326945
+P 2650 16050
+F 0 "U?" H 2400 16400 50  0000 L CNN
+F 1 "D24V22F5_VoltageRegulator" H 1950 15700 50  0000 L CNN
+F 2 "" H 3100 17250 50  0001 C CNN
+F 3 "" H 3100 17250 50  0001 C CNN
+	1    2650 16050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 15850 2050 15850
+Wire Wire Line
+	2050 15850 2050 15950
+Wire Wire Line
+	2050 15950 2300 15950
+$Comp
+L power:GND #PWR?
+U 1 1 6235DC57
+P 2150 16050
+F 0 "#PWR?" H 2150 15800 50  0001 C CNN
+F 1 "GND" V 2155 15922 50  0000 R CNN
+F 2 "" H 2150 16050 50  0001 C CNN
+F 3 "" H 2150 16050 50  0001 C CNN
+	1    2150 16050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 16050 2300 16050
+$Comp
+L power:GND #PWR?
+U 1 1 6236A06D
+P 2150 16150
+F 0 "#PWR?" H 2150 15900 50  0001 C CNN
+F 1 "GND" V 2155 16022 50  0000 R CNN
+F 2 "" H 2150 16150 50  0001 C CNN
+F 3 "" H 2150 16150 50  0001 C CNN
+	1    2150 16150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 16150 2150 16150
+$Comp
+L power:+5V #PWR?
+U 1 1 62384BC7
+P 2100 16250
+F 0 "#PWR?" H 2100 16100 50  0001 C CNN
+F 1 "+5V" V 2115 16378 50  0000 L CNN
+F 2 "" H 2100 16250 50  0001 C CNN
+F 3 "" H 2100 16250 50  0001 C CNN
+	1    2100 16250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 16250 2300 16250
+$Comp
+L DevelopmentBoard:RASPBERRY_PI_3_MODEL_B+ U?
+U 1 1 62423031
+P 3050 3250
+F 0 "U?" H 3000 4417 50  0000 C CNN
+F 1 "RASPBERRY_PI_3_MODEL_B+" H 3000 4326 50  0000 C CNN
+F 2 "MODULE_RASPBERRY_PI_3_MODEL_B+" H 3050 3250 50  0001 L BNN
+F 3 "" H 3050 3250 50  0001 L BNN
+F 4 "Raspberry Pi" H 3050 3250 50  0001 L BNN "MANUFACTURER"
+F 5 "1.0" H 3050 3250 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendations" H 3050 3250 50  0001 L BNN "STANDARD"
+F 7 "18mm" H 3050 3250 50  0001 L BNN "MAXIMUM_PACKAGE_HIEGHT"
+	1    3050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L DevelopmentBoard:MCP3008_ADC U?
+U 1 1 624460E3
+P 7050 2400
+F 0 "U?" H 7050 3048 50  0000 C CNN
+F 1 "MCP3008_ADC" H 7050 2957 50  0000 C CNN
+F 2 "" H 7100 1900 50  0001 C CNN
+F 3 "" H 7100 1900 50  0001 C CNN
+	1    7050 2400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
