@@ -25,7 +25,7 @@ F 3 "~" H 2400 17100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2400 17900 1    50   ~ 0
-VN-100_CS
+VIN-100_CS
 $Comp
 L power:+3.3V #PWR0163
 U 1 1 61670634
@@ -202,9 +202,9 @@ $EndComp
 Text Label 1600 17900 1    50   ~ 0
 SDA
 Text Label 4800 15700 2    50   ~ 0
-CH1
+CH0
 Text Label 4800 15800 2    50   ~ 0
-CH2
+CH1
 $Comp
 L DevelopmentBoard-rescue:XT30-M_Connector-PayloadSymbols X1
 U 1 1 617175F8
@@ -471,23 +471,23 @@ CH7
 Wire Wire Line
 	4400 15900 4800 15900
 Text Label 4650 15900 0    50   ~ 0
-CH3
+CH2
 Wire Wire Line
 	4400 16000 4800 16000
 Text Label 4650 16000 0    50   ~ 0
-CH4
+CH3
 Wire Wire Line
 	4400 16100 4800 16100
 Text Label 4650 16100 0    50   ~ 0
-CH5
+CH4
 Wire Wire Line
 	3600 16000 3200 16000
 Wire Wire Line
 	3600 16100 3200 16100
 Text Label 3200 16100 0    50   ~ 0
-CH6
+CH5
 Text Label 3200 16000 0    50   ~ 0
-CH7
+CH6
 Text Label 3200 15900 0    50   ~ 0
 CH7
 Wire Wire Line
@@ -694,14 +694,6 @@ Wire Wire Line
 	6250 2950 6550 2950
 Wire Wire Line
 	6250 3050 6550 3050
-Wire Wire Line
-	1950 4250 1750 4250
-Wire Wire Line
-	1950 4350 1750 4350
-Text Label 1800 4250 0    50   ~ 0
-SDA
-Text Label 1800 4350 0    50   ~ 0
-SCL
 Text Label 1500 3650 0    50   ~ 0
 VIN-100_CS
 Wire Wire Line
@@ -909,4 +901,12 @@ Wire Wire Line
 	1150 17200 1150 17900
 Text Label 1150 17900 1    50   ~ 0
 CS_SHDN
+Text Label 1800 4350 0    50   ~ 0
+SCL
+Text Label 1800 4250 0    50   ~ 0
+SDA
+Wire Wire Line
+	1950 4350 1750 4350
+Wire Wire Line
+	1950 4250 1750 4250
 $EndSCHEMATC

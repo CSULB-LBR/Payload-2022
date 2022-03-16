@@ -25,7 +25,7 @@ F 3 "~" H 2400 17100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2400 17900 1    50   ~ 0
-VN-100_CS
+VIN-100_CS
 $Comp
 L power:+3.3V #PWR0163
 U 1 1 61670634
@@ -694,14 +694,6 @@ Wire Wire Line
 	6250 2950 6550 2950
 Wire Wire Line
 	6250 3050 6550 3050
-Wire Wire Line
-	1950 4250 1750 4250
-Wire Wire Line
-	1950 4350 1750 4350
-Text Label 1800 4250 0    50   ~ 0
-SDA
-Text Label 1800 4350 0    50   ~ 0
-SCL
 Text Label 1500 3650 0    50   ~ 0
 VIN-100_CS
 Wire Wire Line
@@ -884,21 +876,21 @@ F 3 "" H 2400 15250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R12
+L Device:R_Small_US R20
 U 1 1 626DE972
 P 1150 17100
-F 0 "R12" H 1218 17146 50  0000 L CNN
+F 0 "R20" H 1218 17146 50  0000 L CNN
 F 1 "4.7k" H 1218 17055 50  0000 L CNN
-F 2 "" H 1150 17100 50  0001 C CNN
+F 2 "DevelopmentBoard:0603" H 1150 17100 50  0001 C CNN
 F 3 "~" H 1150 17100 50  0001 C CNN
 	1    1150 17100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0115
 U 1 1 626DFEE0
 P 1150 17000
-F 0 "#PWR?" H 1150 16850 50  0001 C CNN
+F 0 "#PWR0115" H 1150 16850 50  0001 C CNN
 F 1 "+3.3V" H 1165 17173 50  0000 C CNN
 F 2 "" H 1150 17000 50  0001 C CNN
 F 3 "" H 1150 17000 50  0001 C CNN
@@ -909,4 +901,12 @@ Wire Wire Line
 	1150 17200 1150 17900
 Text Label 1150 17900 1    50   ~ 0
 CS_SHDN
+Text Label 1800 4350 0    50   ~ 0
+SCL
+Text Label 1800 4250 0    50   ~ 0
+SDA
+Wire Wire Line
+	1950 4350 1750 4350
+Wire Wire Line
+	1950 4250 1750 4250
 $EndSCHEMATC
