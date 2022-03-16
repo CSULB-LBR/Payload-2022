@@ -14,30 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_Small_US R5
-U 1 1 6166E291
-P 2400 17100
-F 0 "R5" H 2468 17146 50  0000 L CNN
-F 1 "4.7k" H 2468 17055 50  0000 L CNN
-F 2 "DevelopmentBoard:0603" H 2400 17100 50  0001 C CNN
-F 3 "~" H 2400 17100 50  0001 C CNN
-	1    2400 17100
-	1    0    0    -1  
-$EndComp
-Text Label 2400 17900 1    50   ~ 0
-VN-100_CS
-$Comp
-L power:+3.3V #PWR0163
-U 1 1 61670634
-P 2400 17000
-F 0 "#PWR0163" H 2400 16850 50  0001 C CNN
-F 1 "+3.3V" H 2415 17173 50  0000 C CNN
-F 2 "" H 2400 17000 50  0001 C CNN
-F 3 "" H 2400 17000 50  0001 C CNN
-	1    2400 17000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0164
 U 1 1 61619131
 P 4400 15500
@@ -202,9 +178,9 @@ $EndComp
 Text Label 1600 17900 1    50   ~ 0
 SDA
 Text Label 4800 15700 2    50   ~ 0
-CH1
+CH0
 Text Label 4800 15800 2    50   ~ 0
-CH2
+CH1
 $Comp
 L DevelopmentBoard-rescue:XT30-M_Connector-PayloadSymbols X1
 U 1 1 617175F8
@@ -218,55 +194,10 @@ F 3 "" H 1550 15250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 15200 1750 15200
-$Comp
-L DevelopmentBoard-rescue:Conn_01x04_MountingPin-PayloadSymbols J1
-U 1 1 6180C683
-P 6050 10950
-F 0 "J1" H 6138 10864 50  0000 L CNN
-F 1 "Conn_01x04_MountingPin" H 5400 10600 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6050 10950 50  0001 C CNN
-F 3 "~" H 6050 10950 50  0001 C CNN
-	1    6050 10950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6500 10750 6250 10750
-Wire Wire Line
-	6250 11050 6300 11050
-Wire Wire Line
-	6250 10950 6300 10950
-$Comp
-L power:+5V #PWR0179
-U 1 1 61815BF7
-P 6300 10950
-F 0 "#PWR0179" H 6300 10800 50  0001 C CNN
-F 1 "+5V" V 6315 11078 50  0000 L CNN
-F 2 "" H 6300 10950 50  0001 C CNN
-F 3 "" H 6300 10950 50  0001 C CNN
-	1    6300 10950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0180
-U 1 1 6181C68D
-P 6300 11050
-F 0 "#PWR0180" H 6300 10800 50  0001 C CNN
-F 1 "GND" V 6305 10922 50  0000 R CNN
-F 2 "" H 6300 11050 50  0001 C CNN
-F 3 "" H 6300 11050 50  0001 C CNN
-	1    6300 11050
-	0    -1   -1   0   
-$EndComp
 Text Notes 5800 -200 0    50   ~ 0
 The USB Controller has internal 3.3v and 1.8v LDOs.\nThe inputs and outputs of each are connected \nto each other for "Self-Powered" Mode.\n\n
 Wire Wire Line
 	3400 17400 3050 17400
-Text Label 6500 10750 2    50   ~ 0
-TX2
-Wire Wire Line
-	6500 10850 6250 10850
-Text Label 6500 10850 2    50   ~ 0
-RX2
 Wire Wire Line
 	1750 15600 1750 15300
 Connection ~ 1750 15300
@@ -315,8 +246,6 @@ Wire Wire Line
 	1600 17200 1600 17900
 Wire Wire Line
 	2000 17200 2000 17900
-Wire Wire Line
-	2400 17200 2400 17900
 Text Notes 3650 16700 0    98   ~ 0
 Altimeter
 Wire Notes Line
@@ -471,41 +400,25 @@ CH7
 Wire Wire Line
 	4400 15900 4800 15900
 Text Label 4650 15900 0    50   ~ 0
-CH3
+CH2
 Wire Wire Line
 	4400 16000 4800 16000
 Text Label 4650 16000 0    50   ~ 0
-CH4
+CH3
 Wire Wire Line
 	4400 16100 4800 16100
 Text Label 4650 16100 0    50   ~ 0
-CH5
+CH4
 Wire Wire Line
 	3600 16000 3200 16000
 Wire Wire Line
 	3600 16100 3200 16100
 Text Label 3200 16100 0    50   ~ 0
-CH6
+CH5
 Text Label 3200 16000 0    50   ~ 0
-CH7
+CH6
 Text Label 3200 15900 0    50   ~ 0
 CH7
-Wire Wire Line
-	7900 2750 8250 2750
-Wire Wire Line
-	7900 2850 8250 2850
-Text Label 7950 2750 0    50   ~ 0
-PI_MISO
-Text Label 7950 2850 0    50   ~ 0
-PI_MOSI
-Wire Wire Line
-	7900 2650 8250 2650
-Text Label 7950 2650 0    50   ~ 0
-PI_SCLK
-Wire Wire Line
-	7900 2950 8250 2950
-Text Label 7950 2950 0    50   ~ 0
-Pi_D5
 Wire Wire Line
 	7900 3050 8250 3050
 Wire Wire Line
@@ -563,17 +476,17 @@ Wire Wire Line
 Wire Wire Line
 	1950 4050 1750 4050
 Text Label 1800 3950 0    50   ~ 0
-DIN
+MOSI
 Text Label 1800 4050 0    50   ~ 0
-DOUT
+MISO
 Wire Wire Line
 	1950 3850 1750 3850
 Text Label 1800 3850 0    50   ~ 0
-CLK
-Text Label 1600 3750 0    50   ~ 0
-CS_SHDN
+SCLK
+Text Label 1600 3650 0    50   ~ 0
+CS_ADC
 Wire Wire Line
-	1600 3750 1950 3750
+	1600 3650 1950 3650
 $Comp
 L Device:R_Small_US R2
 U 1 1 624B7DEB
@@ -694,18 +607,6 @@ Wire Wire Line
 	6250 2950 6550 2950
 Wire Wire Line
 	6250 3050 6550 3050
-Wire Wire Line
-	1950 4250 1750 4250
-Wire Wire Line
-	1950 4350 1750 4350
-Text Label 1800 4250 0    50   ~ 0
-SDA
-Text Label 1800 4350 0    50   ~ 0
-SCL
-Text Label 1500 3650 0    50   ~ 0
-VIN-100_CS
-Wire Wire Line
-	1500 3650 1950 3650
 $Comp
 L Connector:TestPoint TP4
 U 1 1 62563BD3
@@ -856,7 +757,7 @@ Wire Wire Line
 Text Label 7850 11650 0    50   ~ 0
 PI_SCLK
 Text Label 7850 11750 0    50   ~ 0
-Pi_MISO
+PI_MISO
 Text Label 7850 11850 0    50   ~ 0
 PI_MOSI
 Text Label 7850 11950 0    50   ~ 0
@@ -908,5 +809,51 @@ $EndComp
 Wire Wire Line
 	1150 17200 1150 17900
 Text Label 1150 17900 1    50   ~ 0
-CS_SHDN
+CS_ADC
+Text Label 1800 4350 0    50   ~ 0
+SCL
+Text Label 1800 4250 0    50   ~ 0
+SDA
+Wire Wire Line
+	1950 4350 1750 4350
+Wire Wire Line
+	1950 4250 1750 4250
+$Comp
+L power:+5V #PWR0116
+U 1 1 623DD84B
+P 4050 2350
+F 0 "#PWR0116" H 4050 2200 50  0001 C CNN
+F 1 "+5V" V 4065 2478 50  0000 L CNN
+F 2 "" H 4050 2350 50  0001 C CNN
+F 3 "" H 4050 2350 50  0001 C CNN
+	1    4050 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 62402BAE
+P 4050 2450
+F 0 "#PWR0117" H 4050 2300 50  0001 C CNN
+F 1 "+3.3V" V 4065 2578 50  0000 L CNN
+F 2 "" H 4050 2450 50  0001 C CNN
+F 3 "" H 4050 2450 50  0001 C CNN
+	1    4050 2450
+	0    1    1    0   
+$EndComp
+Text Label 7950 2950 0    50   ~ 0
+CS_ADC
+Wire Wire Line
+	7900 2950 8250 2950
+Text Label 7950 2650 0    50   ~ 0
+SCLK
+Wire Wire Line
+	7900 2650 8250 2650
+Text Label 7950 2850 0    50   ~ 0
+MOSI
+Text Label 7950 2750 0    50   ~ 0
+MISO
+Wire Wire Line
+	7900 2850 8250 2850
+Wire Wire Line
+	7900 2750 8250 2750
 $EndSCHEMATC
