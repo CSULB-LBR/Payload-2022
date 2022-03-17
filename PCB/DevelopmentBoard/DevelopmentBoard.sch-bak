@@ -763,10 +763,10 @@ F 3 "" H 2400 15250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R20
+L Device:R_Small_US R5
 U 1 1 626DE972
 P 1150 17100
-F 0 "R20" H 1218 17146 50  0000 L CNN
+F 0 "R5" H 1218 17146 50  0000 L CNN
 F 1 "4.7k" H 1218 17055 50  0000 L CNN
 F 2 "DevelopmentBoard:0603" H 1150 17100 50  0001 C CNN
 F 3 "~" H 1150 17100 50  0001 C CNN
@@ -900,4 +900,12 @@ F 3 "" H 1100 15350 50  0001 C CNN
 	1    1100 15350
 	-1   0    0    1   
 $EndComp
+Text Label 3450 15800 0    50   ~ 0
+SCL
+Text Label 3450 15700 0    50   ~ 0
+SDA
+Wire Wire Line
+	3600 15800 3400 15800
+Wire Wire Line
+	3600 15700 3400 15700
 $EndSCHEMATC
