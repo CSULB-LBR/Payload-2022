@@ -103,8 +103,8 @@ $Comp
 L Connector:TestPoint TP3
 U 1 1 61AB8223
 P 5550 3450
-F 0 "TP3" V 5745 3522 50  0000 C CNN
-F 1 "TestPoint" V 5654 3522 50  0000 C CNN
+F 0 "TP3" V 5600 3500 50  0000 C CNN
+F 1 "TestPoint" V 5600 3800 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5750 3450 50  0001 C CNN
 F 3 "~" H 5750 3450 50  0001 C CNN
 	1    5550 3450
@@ -114,8 +114,8 @@ $Comp
 L Connector:TestPoint TP4
 U 1 1 61AB9396
 P 5550 3525
-F 0 "TP4" V 5745 3597 50  0000 C CNN
-F 1 "TestPoint" V 5654 3597 50  0000 C CNN
+F 0 "TP4" V 5575 3575 50  0000 C CNN
+F 1 "TestPoint" V 5575 3875 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5750 3525 50  0001 C CNN
 F 3 "~" H 5750 3525 50  0001 C CNN
 	1    5550 3525
@@ -138,10 +138,6 @@ F 3 "" H 5675 3650 50  0001 C CNN
 	1    5675 3650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5675 3550 5550 3550
-Wire Wire Line
-	5550 3550 5550 3600
 Wire Wire Line
 	4350 3600 4350 1600
 Wire Wire Line
@@ -245,10 +241,6 @@ F 3 "" H 10200 2400 50  0001 C CNN
 	1    10200 2400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6425 3500 6425 3100
-Wire Wire Line
-	6425 3100 5300 3100
 Wire Wire Line
 	5300 3100 5300 2600
 Wire Wire Line
@@ -407,4 +399,25 @@ Text Label 5300 3900 0    50   ~ 0
 SDA_GPS
 Wire Wire Line
 	4000 2100 4300 2100
+Wire Wire Line
+	5550 3550 5675 3550
+Wire Wire Line
+	5550 3550 5550 3600
+Wire Wire Line
+	5550 3600 5400 3600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 625F178F
+P 5400 3600
+F 0 "#PWR?" H 5400 3450 50  0001 C CNN
+F 1 "+3.3V" V 5415 3728 50  0000 L CNN
+F 2 "" H 5400 3600 50  0001 C CNN
+F 3 "" H 5400 3600 50  0001 C CNN
+	1    5400 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6425 3500 6425 3100
+Wire Wire Line
+	6425 3100 5300 3100
 $EndSCHEMATC
