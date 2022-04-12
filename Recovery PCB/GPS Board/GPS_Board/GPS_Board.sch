@@ -127,18 +127,6 @@ Wire Wire Line
 	5550 3525 5550 3500
 Wire Wire Line
 	5550 3500 5675 3500
-Wire Wire Line
-	4000 2100 5225 2100
-Wire Wire Line
-	5225 2100 5225 3700
-Wire Wire Line
-	5225 3700 5675 3700
-Wire Wire Line
-	4000 2200 5175 2200
-Wire Wire Line
-	5175 2200 5175 3750
-Wire Wire Line
-	5175 3750 5675 3750
 $Comp
 L power:GND #PWR0101
 U 1 1 61ABCD1D
@@ -154,8 +142,6 @@ Wire Wire Line
 	5675 3550 5550 3550
 Wire Wire Line
 	5550 3550 5550 3600
-Wire Wire Line
-	5550 3600 4350 3600
 Wire Wire Line
 	4350 3600 4350 1600
 Wire Wire Line
@@ -397,4 +383,28 @@ F 3 "" H 7075 1550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 7075 1550
+Wire Wire Line
+	4000 2200 4300 2200
+Wire Wire Line
+	5300 3900 5650 3900
+Wire Wire Line
+	5550 3700 5550 3800
+Wire Wire Line
+	5550 3800 5200 3800
+Wire Wire Line
+	5675 3700 5550 3700
+Wire Wire Line
+	5650 3750 5650 3900
+Wire Wire Line
+	5650 3750 5675 3750
+Text Label 4000 2100 0    50   ~ 0
+SCL_GPS
+Text Label 4000 2200 0    50   ~ 0
+SDA_GPS
+Text Label 5200 3800 0    50   ~ 0
+SCL_GPS
+Text Label 5300 3900 0    50   ~ 0
+SDA_GPS
+Wire Wire Line
+	4000 2100 4300 2100
 $EndSCHEMATC
