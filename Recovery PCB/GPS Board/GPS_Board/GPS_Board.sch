@@ -89,17 +89,6 @@ F 3 "" H 6000 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS_Board:XBee-3-Pro A1
-U 1 1 61AB64FA
-P 5825 1900
-F 0 "A1" H 5825 2665 50  0000 C CNN
-F 1 "XBee-3-Pro" H 5825 2574 50  0000 C CNN
-F 2 "GPS Board:XBEE-20_THT" H 5825 1900 50  0001 C CNN
-F 3 "" H 5825 1900 50  0001 C CNN
-	1    5825 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint TP3
 U 1 1 61AB8223
 P 5550 3450
@@ -185,13 +174,13 @@ $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 61ACAD1F
-P 5500 1875
-F 0 "#PWR0106" H 5500 1625 50  0001 C CNN
-F 1 "GND" H 5505 1702 50  0000 C CNN
-F 2 "" H 5500 1875 50  0001 C CNN
-F 3 "" H 5500 1875 50  0001 C CNN
-	1    5500 1875
-	1    0    0    -1  
+P 5325 1875
+F 0 "#PWR0106" H 5325 1625 50  0001 C CNN
+F 1 "GND" V 5375 1900 50  0000 C CNN
+F 2 "" H 5325 1875 50  0001 C CNN
+F 3 "" H 5325 1875 50  0001 C CNN
+	1    5325 1875
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP2
@@ -310,8 +299,6 @@ F 3 "" H 5400 3600 50  0001 C CNN
 	1    5400 3600
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5600 5400 0    50   Input ~ 0
-bruh
 Text Label 4440 3400 2    50   ~ 0
 GPS_RESEST
 Wire Wire Line
@@ -342,10 +329,6 @@ Wire Wire Line
 	4000 2700 4450 2700
 Text Label 6625 1525 2    39   ~ 0
 AD2_SPI_CLOCK
-Wire Wire Line
-	6150 1525 6625 1525
-Wire Wire Line
-	6150 1575 6625 1575
 Text Label 6625 1575 2    39   ~ 0
 AD3_SRI_SSEL
 Text Label 1400 2500 0    39   ~ 0
@@ -355,48 +338,38 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR?
 U 1 1 625CE6B8
-P 5500 1425
-F 0 "#PWR?" H 5500 1275 50  0001 C CNN
-F 1 "+3.3V" H 5515 1598 50  0000 C CNN
-F 2 "" H 5500 1425 50  0001 C CNN
-F 3 "" H 5500 1425 50  0001 C CNN
-	1    5500 1425
-	1    0    0    -1  
+P 5325 1425
+F 0 "#PWR?" H 5325 1275 50  0001 C CNN
+F 1 "+3.3V" V 5375 1500 50  0000 C CNN
+F 2 "" H 5325 1425 50  0001 C CNN
+F 3 "" H 5325 1425 50  0001 C CNN
+	1    5325 1425
+	0    -1   -1   0   
 $EndComp
-Text Label 5250 1575 0    39   ~ 0
+Text Label 5075 1575 0    39   ~ 0
 SPI_MISO
-Wire Wire Line
-	5250 1575 5500 1575
 Text Label 1525 2700 0    39   ~ 0
 SPI_MISO
 Wire Wire Line
 	1800 2700 1525 2700
 Wire Wire Line
-	5500 1625 5250 1625
-Wire Wire Line
 	4000 3300 4425 3300
 Text Label 4375 3300 2    39   ~ 0
 PCB_RESET
-Text Label 5250 1625 0    39   ~ 0
+Text Label 5050 1625 0    39   ~ 0
 PCB_RESET
-Wire Wire Line
-	5500 1675 5250 1675
-Text Label 5250 1675 0    39   ~ 0
+Text Label 5050 1675 0    39   ~ 0
 RSSL_PWM
 Wire Wire Line
 	4000 1800 4325 1800
 Text Label 4325 1800 2    39   ~ 0
 RSSL_PWM
-Wire Wire Line
-	5500 1825 5250 1825
-Text Label 5250 1825 0    39   ~ 0
+Text Label 5050 1825 0    39   ~ 0
 DTR
 Wire Wire Line
 	4000 3200 4400 3200
 Text Label 4400 3200 2    39   ~ 0
 GPS_DTR
-Wire Wire Line
-	6150 1775 6575 1775
 Text Label 6575 1775 2    39   ~ 0
 ON_SLEEP
 Wire Wire Line
@@ -414,8 +387,33 @@ F 3 "" H 4000 1600 50  0001 C CNN
 	1    4000 1600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6150 1875 6575 1875
 Text Label 6575 1875 2    39   ~ 0
 SPI_MOSI
+Wire Wire Line
+	6175 1525 6625 1525
+Wire Wire Line
+	6175 1575 6625 1575
+Wire Wire Line
+	6175 1775 6575 1775
+Wire Wire Line
+	6175 1875 6575 1875
+Wire Wire Line
+	5325 1825 5050 1825
+Wire Wire Line
+	5325 1675 5050 1675
+Wire Wire Line
+	5325 1625 5050 1625
+$Comp
+L GPS_Board:XBee-3-Pro A1
+U 1 1 61AB64FA
+P 5850 1900
+F 0 "A1" H 5850 2665 50  0000 C CNN
+F 1 "XBee-3-Pro" H 5850 2574 50  0000 C CNN
+F 2 "GPS Board:XBEE-20_THT" H 5850 1900 50  0001 C CNN
+F 3 "" H 5850 1900 50  0001 C CNN
+	1    5850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5075 1575 5325 1575
 $EndSCHEMATC
