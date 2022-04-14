@@ -242,10 +242,6 @@ F 3 "" H 2950 5125 50  0001 C CNN
 	1    2950 5125
 	1    0    0    -1  
 $EndComp
-Text GLabel 1725 2600 0    50   Input ~ 0
-MOSI
-Wire Wire Line
-	1800 2600 1725 2600
 $Comp
 L power:GND #PWR?
 U 1 1 61BA5EBA
@@ -273,13 +269,13 @@ Wire Wire Line
 Wire Wire Line
 	5650 3750 5675 3750
 Text Label 4000 2100 0    50   ~ 0
-SCL_GPS
+GPS_SCL
 Text Label 4000 2200 0    50   ~ 0
-SDA_GPS
+GPS_SDA
 Text Label 5200 3800 0    50   ~ 0
-SCL_GPS
+GPS_SCL
 Text Label 5300 3900 0    50   ~ 0
-SDA_GPS
+GPS_SDA
 Wire Wire Line
 	4000 2100 4300 2100
 Wire Wire Line
@@ -324,15 +320,13 @@ GPS_INT
 Text Label 6825 3500 2    39   ~ 0
 GPS_INT
 Text Label 4450 2700 2    39   ~ 0
-AD2_SPI_CLOCK
+XBee_SCK
 Wire Wire Line
 	4000 2700 4450 2700
 Text Label 6625 1525 2    39   ~ 0
-AD2_SPI_CLOCK
-Text Label 6625 1575 2    39   ~ 0
-AD3_SRI_SSEL
+XBee_SCK
 Text Label 1400 2500 0    39   ~ 0
-AD3_SRI_CLOCK
+XBee_CS
 Wire Wire Line
 	1400 2500 1800 2500
 $Comp
@@ -346,30 +340,26 @@ F 3 "" H 5325 1425 50  0001 C CNN
 	1    5325 1425
 	0    -1   -1   0   
 $EndComp
-Text Label 5075 1575 0    39   ~ 0
-SPI_MISO
 Text Label 1525 2700 0    39   ~ 0
-SPI_MISO
+XBee_MISO
 Wire Wire Line
 	1800 2700 1525 2700
 Wire Wire Line
 	4000 3300 4425 3300
 Text Label 4375 3300 2    39   ~ 0
-PCB_RESET
-Text Label 5050 1625 0    39   ~ 0
-PCB_RESET
+XBee_RESET
 Text Label 5050 1675 0    39   ~ 0
-RSSL_PWM
+XBee_PWM
 Wire Wire Line
 	4000 1800 4325 1800
 Text Label 4325 1800 2    39   ~ 0
-RSSL_PWM
+XBee_PWM
 Text Label 5050 1825 0    39   ~ 0
-DTR
+XBee_DTR
 Wire Wire Line
 	4000 3200 4400 3200
 Text Label 4400 3200 2    39   ~ 0
-GPS_DTR
+XBee_DTR
 Text Label 6575 1775 2    39   ~ 0
 ON_SLEEP
 Wire Wire Line
@@ -388,7 +378,7 @@ F 3 "" H 4000 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 6575 1875 2    39   ~ 0
-SPI_MOSI
+XBee_MOSI
 Wire Wire Line
 	6175 1525 6625 1525
 Wire Wire Line
@@ -415,5 +405,15 @@ F 3 "" H 5850 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5075 1575 5325 1575
+	1800 2600 1525 2600
+Text Label 1525 2600 0    39   ~ 0
+XBee_MOSI
+Text Label 6625 1575 2    39   ~ 0
+XBee_CS
+Text Label 5050 1625 0    39   ~ 0
+XBee_Reset
+Text Label 5050 1575 0    39   ~ 0
+XBee_MISO
+Wire Wire Line
+	5050 1575 5325 1575
 $EndSCHEMATC
