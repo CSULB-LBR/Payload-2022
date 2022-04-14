@@ -310,16 +310,6 @@ Wire Wire Line
 Wire Wire Line
 	4775 3300 4000 3300
 Wire Wire Line
-	6425 3550 6625 3550
-Wire Wire Line
-	6625 3550 6625 4275
-Wire Wire Line
-	6625 4275 4750 4275
-Wire Wire Line
-	4750 4275 4750 3400
-Wire Wire Line
-	4750 3400 4000 3400
-Wire Wire Line
 	5500 1825 5375 1825
 Wire Wire Line
 	5375 1825 5375 3200
@@ -420,4 +410,10 @@ Wire Wire Line
 	6425 3500 6425 3100
 Wire Wire Line
 	6425 3100 5300 3100
+Text GLabel 5600 5400 0    50   Input ~ 0
+bruh
+Text Label 4440 3400 2    50   ~ 0
+GPS_RESEST
+Wire Wire Line
+	4000 3400 4440 3400
 $EndSCHEMATC

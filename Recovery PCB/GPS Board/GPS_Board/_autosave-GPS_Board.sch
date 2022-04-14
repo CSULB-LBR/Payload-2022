@@ -138,10 +138,6 @@ F 3 "" H 5675 3650 50  0001 C CNN
 	1    5675 3650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4350 3600 4350 1600
-Wire Wire Line
-	4350 1600 4000 1600
 $Comp
 L power:GND #PWR0102
 U 1 1 61ABF5FF
@@ -242,18 +238,6 @@ F 3 "" H 10200 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5300 3100 5300 2600
-Wire Wire Line
-	5300 2600 4000 2600
-Wire Wire Line
-	5350 2500 5350 3050
-Wire Wire Line
-	5350 3050 6475 3050
-Wire Wire Line
-	6475 3050 6475 3600
-Wire Wire Line
-	6475 3600 6425 3600
-Wire Wire Line
 	2900 4850 2950 4850
 Wire Wire Line
 	2950 4850 2950 5125
@@ -269,84 +253,10 @@ F 3 "" H 2950 5125 50  0001 C CNN
 	1    2950 5125
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 1425 4350 1425
-Wire Wire Line
-	4350 1425 4350 1600
-Connection ~ 4350 1600
-$Comp
-L Connector:TestPoint TP5
-U 1 1 61AB1BEF
-P 6150 1475
-F 0 "TP5" V 6104 1663 50  0000 L CNN
-F 1 "TestPoint" V 6195 1663 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6350 1475 50  0001 C CNN
-F 3 "~" H 6350 1475 50  0001 C CNN
-	1    6150 1475
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5500 1575 5300 1575
-Wire Wire Line
-	5300 1575 5300 750 
-Wire Wire Line
-	5300 750  1250 750 
-Wire Wire Line
-	1250 750  1250 2700
-Wire Wire Line
-	1250 2700 1800 2700
-Wire Wire Line
-	5500 1675 4175 1675
-Wire Wire Line
-	4175 1675 4175 1800
-Wire Wire Line
-	4175 1800 4000 1800
-Wire Wire Line
-	5500 1625 4775 1625
-Wire Wire Line
-	4775 1625 4775 3300
-Wire Wire Line
-	4775 3300 4000 3300
-Wire Wire Line
-	5500 1825 5375 1825
-Wire Wire Line
-	5375 1825 5375 3200
-Wire Wire Line
-	5375 3200 4000 3200
-Wire Wire Line
-	1800 2500 1475 2500
-Wire Wire Line
-	1475 2500 1475 950 
-Wire Wire Line
-	1475 950  6500 950 
-Wire Wire Line
-	6500 950  6500 1575
-Wire Wire Line
-	6500 1575 6150 1575
-Wire Wire Line
-	6150 1525 6425 1525
-Wire Wire Line
-	6425 1525 6425 1075
-Wire Wire Line
-	6425 1075 4550 1075
-Wire Wire Line
-	4550 1075 4550 2700
-Wire Wire Line
-	4550 2700 4000 2700
-Wire Wire Line
-	4525 2925 4525 3700
-Wire Wire Line
-	4525 3700 4000 3700
 Text GLabel 6225 1875 2    50   Input ~ 0
 MOSI
 Wire Wire Line
 	6150 1875 6225 1875
-Wire Wire Line
-	6150 1775 6525 1775
-Wire Wire Line
-	4525 2925 6525 2925
-Wire Wire Line
-	6525 1775 6525 2925
 Text GLabel 1725 2600 0    50   Input ~ 0
 MOSI
 Wire Wire Line
@@ -404,18 +314,108 @@ F 3 "" H 5400 3600 50  0001 C CNN
 	1    5400 3600
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6425 3500 6425 3100
-Wire Wire Line
-	6425 3100 5300 3100
 Text GLabel 5600 5400 0    50   Input ~ 0
 bruh
 Text Label 4440 3400 2    50   ~ 0
 GPS_RESEST
 Wire Wire Line
 	4000 3400 4440 3400
-Text Label 6850 3550 2    50   ~ 0
+Text Label 6750 3550 2    39   ~ 0
 GPS_RESET
 Wire Wire Line
 	6425 3550 6850 3550
+Wire Wire Line
+	6425 3600 6850 3600
+Text Label 4300 2500 2    50   ~ 0
+GPS_PP5
+Wire Wire Line
+	4000 2500 4300 2500
+Text Label 6850 3600 2    39   ~ 0
+GPS_PP5
+Wire Wire Line
+	6425 3500 6825 3500
+Wire Wire Line
+	4000 2600 4300 2600
+Text Label 4300 2600 2    50   ~ 0
+GPS_INT
+Text Label 6825 3500 2    39   ~ 0
+GPS_INT
+Text Label 4450 2700 2    39   ~ 0
+AD2_SPI_CLOCK
+Wire Wire Line
+	4000 2700 4450 2700
+Text Label 6625 1525 2    39   ~ 0
+AD2_SPI_CLOCK
+Wire Wire Line
+	6150 1525 6625 1525
+Wire Wire Line
+	6150 1575 6625 1575
+Text Label 6625 1575 2    39   ~ 0
+AD3_SRI_SSEL
+Text Label 1400 2500 0    39   ~ 0
+AD3_SRI_CLOCK
+Wire Wire Line
+	1400 2500 1800 2500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 625CE6B8
+P 5500 1425
+F 0 "#PWR?" H 5500 1275 50  0001 C CNN
+F 1 "+3.3V" H 5515 1598 50  0000 C CNN
+F 2 "" H 5500 1425 50  0001 C CNN
+F 3 "" H 5500 1425 50  0001 C CNN
+	1    5500 1425
+	1    0    0    -1  
+$EndComp
+Text Label 5250 1575 0    39   ~ 0
+SPI_MISO
+Wire Wire Line
+	5250 1575 5500 1575
+Text Label 1525 2700 0    39   ~ 0
+SPI_MISO
+Wire Wire Line
+	1800 2700 1525 2700
+Wire Wire Line
+	5500 1625 5250 1625
+Wire Wire Line
+	4000 3300 4425 3300
+Text Label 4375 3300 2    39   ~ 0
+PCB_RESET
+Text Label 5250 1625 0    39   ~ 0
+PCB_RESET
+Wire Wire Line
+	5500 1675 5250 1675
+Text Label 5250 1675 0    39   ~ 0
+RSSL_PWM
+Wire Wire Line
+	4000 1800 4325 1800
+Text Label 4325 1800 2    39   ~ 0
+RSSL_PWM
+Wire Wire Line
+	5500 1825 5250 1825
+Text Label 5250 1825 0    39   ~ 0
+DTR
+Wire Wire Line
+	4000 3200 4400 3200
+Text Label 4400 3200 2    39   ~ 0
+GPS_DTR
+Wire Wire Line
+	6150 1775 6575 1775
+Text Label 6575 1775 2    39   ~ 0
+ON_SLEEP
+Wire Wire Line
+	4000 3700 4425 3700
+Text Label 4425 3700 2    39   ~ 0
+ON_SLEEP
+$Comp
+L power:+3.3V #PWR?
+U 1 1 625E340B
+P 4000 1600
+F 0 "#PWR?" H 4000 1450 50  0001 C CNN
+F 1 "+3.3V" V 4015 1728 50  0000 L CNN
+F 2 "" H 4000 1600 50  0001 C CNN
+F 3 "" H 4000 1600 50  0001 C CNN
+	1    4000 1600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
