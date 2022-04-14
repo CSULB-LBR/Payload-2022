@@ -420,4 +420,6 @@ Wire Wire Line
 	6425 3500 6425 3100
 Wire Wire Line
 	6425 3100 5300 3100
+Text Label 4950 2250 0    50   ~ 0
+DEEZ
 $EndSCHEMATC
