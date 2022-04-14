@@ -2,4 +2,5 @@
   (lib (name GPS_Board)(type Legacy)(uri ${KIPRJMOD}/GPS_Board.lib)(options "")(descr ""))
   (lib (name eboot-mp1584en-5v-power-supply)(type Legacy)(uri ${KIPRJMOD}/eboot-mp1584en-5v-power-supply.lib)(options "")(descr ""))
   (lib (name GPS_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/GPS_Board-rescue.lib)(options "")(descr ""))
+  (lib (name DevelopmentBoard)(type Legacy)(uri C:/Users/allan/OneDrive/Documents/GitHub/Payload-2022-Electrical/PCB/DevelopmentBoard/DevelopmentBoard.lib)(options "")(descr ""))
 )

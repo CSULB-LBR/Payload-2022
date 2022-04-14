@@ -206,7 +206,7 @@ Wire Notes Line
 Wire Notes Line
 	1000 22500 1000 1000
 Wire Notes Line
-	700  950  8700 950 
+	1000 975  9000 975 
 Wire Notes Line
 	9000 1000 9000 22500
 Wire Notes Line
