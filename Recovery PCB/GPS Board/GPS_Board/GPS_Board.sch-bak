@@ -340,8 +340,6 @@ F 3 "" H 5325 1425 50  0001 C CNN
 	1    5325 1425
 	0    -1   -1   0   
 $EndComp
-Text Label 5075 1575 0    39   ~ 0
-XBee_MISO
 Text Label 1525 2700 0    39   ~ 0
 XBee_MISO
 Wire Wire Line
@@ -350,8 +348,6 @@ Wire Wire Line
 	4000 3300 4425 3300
 Text Label 4375 3300 2    39   ~ 0
 XBee_RESET
-Text Label 5050 1625 0    39   ~ 0
-XBee_Reset
 Text Label 5050 1675 0    39   ~ 0
 XBee_PWM
 Wire Wire Line
@@ -409,11 +405,15 @@ F 3 "" H 5850 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5075 1575 5325 1575
-Wire Wire Line
 	1800 2600 1525 2600
 Text Label 1525 2600 0    39   ~ 0
 XBee_MOSI
 Text Label 6625 1575 2    39   ~ 0
 XBee_CS
+Text Label 5050 1625 0    39   ~ 0
+XBee_Reset
+Text Label 5050 1575 0    39   ~ 0
+XBee_MISO
+Wire Wire Line
+	5050 1575 5325 1575
 $EndSCHEMATC

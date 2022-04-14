@@ -174,12 +174,12 @@ $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 61ACAD1F
-P 5325 1875
-F 0 "#PWR0106" H 5325 1625 50  0001 C CNN
-F 1 "GND" V 5375 1900 50  0000 C CNN
-F 2 "" H 5325 1875 50  0001 C CNN
-F 3 "" H 5325 1875 50  0001 C CNN
-	1    5325 1875
+P 5425 2125
+F 0 "#PWR0106" H 5425 1875 50  0001 C CNN
+F 1 "GND" V 5425 1950 50  0000 C CNN
+F 2 "" H 5425 2125 50  0001 C CNN
+F 3 "" H 5425 2125 50  0001 C CNN
+	1    5425 2125
 	0    1    1    0   
 $EndComp
 $Comp
@@ -319,11 +319,11 @@ Text Label 4300 2600 2    50   ~ 0
 GPS_INT
 Text Label 6825 3500 2    39   ~ 0
 GPS_INT
-Text Label 4450 2700 2    39   ~ 0
+Text Label 4325 2700 2    39   ~ 0
 XBee_SCK
 Wire Wire Line
-	4000 2700 4450 2700
-Text Label 6625 1525 2    39   ~ 0
+	4000 2700 4325 2700
+Text Label 6575 1425 2    39   ~ 0
 XBee_SCK
 Text Label 1400 2500 0    39   ~ 0
 XBee_CS
@@ -332,12 +332,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR?
 U 1 1 625CE6B8
-P 5325 1425
-F 0 "#PWR?" H 5325 1275 50  0001 C CNN
-F 1 "+3.3V" V 5375 1500 50  0000 C CNN
-F 2 "" H 5325 1425 50  0001 C CNN
-F 3 "" H 5325 1425 50  0001 C CNN
-	1    5325 1425
+P 5425 1225
+F 0 "#PWR?" H 5425 1075 50  0001 C CNN
+F 1 "+3.3V" V 5475 1300 50  0000 C CNN
+F 2 "" H 5425 1225 50  0001 C CNN
+F 3 "" H 5425 1225 50  0001 C CNN
+	1    5425 1225
 	0    -1   -1   0   
 $EndComp
 Text Label 1525 2700 0    39   ~ 0
@@ -348,19 +348,19 @@ Wire Wire Line
 	4000 3300 4425 3300
 Text Label 4375 3300 2    39   ~ 0
 XBee_RESET
-Text Label 5050 1675 0    39   ~ 0
+Text Label 5150 1725 0    39   ~ 0
 XBee_PWM
 Wire Wire Line
 	4000 1800 4325 1800
 Text Label 4325 1800 2    39   ~ 0
 XBee_PWM
-Text Label 5050 1825 0    39   ~ 0
+Text Label 5150 2025 0    39   ~ 0
 XBee_DTR
 Wire Wire Line
 	4000 3200 4400 3200
 Text Label 4400 3200 2    39   ~ 0
 XBee_DTR
-Text Label 6575 1775 2    39   ~ 0
+Text Label 6675 1925 2    39   ~ 0
 ON_SLEEP
 Wire Wire Line
 	4000 3700 4425 3700
@@ -377,28 +377,26 @@ F 3 "" H 4000 1600 50  0001 C CNN
 	1    4000 1600
 	0    1    1    0   
 $EndComp
-Text Label 6575 1875 2    39   ~ 0
+Text Label 6675 2125 2    39   ~ 0
 XBee_MOSI
 Wire Wire Line
-	6175 1525 6625 1525
+	6275 1525 6575 1525
 Wire Wire Line
-	6175 1575 6625 1575
+	6275 1925 6675 1925
 Wire Wire Line
-	6175 1775 6575 1775
+	6275 2125 6675 2125
 Wire Wire Line
-	6175 1875 6575 1875
+	5425 2025 5150 2025
 Wire Wire Line
-	5325 1825 5050 1825
+	5425 1725 5150 1725
 Wire Wire Line
-	5325 1675 5050 1675
-Wire Wire Line
-	5325 1625 5050 1625
+	5425 1625 5150 1625
 $Comp
 L GPS_Board:XBee-3-Pro A1
 U 1 1 61AB64FA
 P 5850 1900
-F 0 "A1" H 5850 2665 50  0000 C CNN
-F 1 "XBee-3-Pro" H 5850 2574 50  0000 C CNN
+F 0 "A1" H 5850 2750 50  0000 C CNN
+F 1 "XBee-3-Pro" H 5850 2675 50  0000 C CNN
 F 2 "GPS Board:XBEE-20_THT" H 5850 1900 50  0001 C CNN
 F 3 "" H 5850 1900 50  0001 C CNN
 	1    5850 1900
@@ -408,12 +406,30 @@ Wire Wire Line
 	1800 2600 1525 2600
 Text Label 1525 2600 0    39   ~ 0
 XBee_MOSI
-Text Label 6625 1575 2    39   ~ 0
+Text Label 6575 1525 2    39   ~ 0
 XBee_CS
-Text Label 5050 1625 0    39   ~ 0
+Text Label 5150 1625 0    39   ~ 0
 XBee_Reset
-Text Label 5050 1575 0    39   ~ 0
+Text Label 5150 1525 0    39   ~ 0
 XBee_MISO
 Wire Wire Line
-	5050 1575 5325 1575
+	5150 1525 5425 1525
+Wire Wire Line
+	6275 1425 6575 1425
+Wire Wire Line
+	5150 1825 5425 1825
+Wire Wire Line
+	6275 1325 6575 1325
+Text Label 5150 1825 0    39   ~ 0
+XBEE_SDA
+Text Label 6575 1325 2    39   ~ 0
+XBEE_SCL
+Wire Wire Line
+	4000 2300 4300 2300
+Wire Wire Line
+	4000 2400 4300 2400
+Text Label 4300 2300 2    39   ~ 0
+XBEE_SDA
+Text Label 4300 2400 2    39   ~ 0
+XBEE_SCL
 $EndSCHEMATC
