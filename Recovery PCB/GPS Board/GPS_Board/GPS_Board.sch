@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GPS_Board-rescue:Teensy4.1-teensy U1
-U 1 1 61A899BD
-P 2900 3550
-F 0 "U1" H 2900 6115 50  0000 C CNN
-F 1 "Teensy4.1" H 2900 6024 50  0000 C CNN
-F 2 "GPS Board:Teensy41" H 2500 3950 50  0001 C CNN
-F 3 "" H 2500 3950 50  0001 C CNN
-	1    2900 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L GPS_Board:XT30-M J1
 U 1 1 61A95F1A
 P 7225 1400
@@ -156,7 +145,6 @@ Wire Wire Line
 	2900 4850 2950 4850
 Wire Wire Line
 	2950 4850 2950 5125
-Connection ~ 2900 4850
 $Comp
 L power:GND #PWR0109
 U 1 1 61ADB104
@@ -254,17 +242,6 @@ Wire Wire Line
 	4000 3700 4300 3700
 Text Label 4300 3700 2    39   ~ 0
 XBEE_SLEEP
-$Comp
-L power:+3.3V #PWR0110
-U 1 1 625E340B
-P 4000 1600
-F 0 "#PWR0110" H 4000 1450 50  0001 C CNN
-F 1 "+3.3V" V 4015 1728 50  0000 L CNN
-F 2 "" H 4000 1600 50  0001 C CNN
-F 3 "" H 4000 1600 50  0001 C CNN
-	1    4000 1600
-	0    1    1    0   
-$EndComp
 Text Label 6675 2125 2    39   ~ 0
 XBee_MOSI
 Wire Wire Line
@@ -397,10 +374,6 @@ F 3 "" H 9640 2765 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1800 3300 1525 3300
-Wire Wire Line
-	1800 3400 1525 3400
-Wire Wire Line
 	6275 1525 6575 1525
 Wire Wire Line
 	6275 2125 6675 2125
@@ -418,10 +391,6 @@ Text Label 5150 1325 0    39   ~ 0
 XBEE_TX
 Text Label 5150 1425 0    39   ~ 0
 XBEE_RX
-Text Label 1525 3300 0    39   ~ 0
-XBEE_TX
-Text Label 1525 3400 0    39   ~ 0
-XBEE_RX
 Wire Wire Line
 	1800 1500 1525 1500
 Wire Wire Line
@@ -430,17 +399,6 @@ Text Label 1525 1500 0    39   ~ 0
 GPS_TX
 Text Label 1525 1600 0    39   ~ 0
 GPS_RX
-$Comp
-L power:+3.3V #PWR0116
-U 1 1 625EA16C
-P 2750 4850
-F 0 "#PWR0116" H 2750 4700 50  0001 C CNN
-F 1 "+3.3V" H 2765 5023 50  0000 C CNN
-F 2 "" H 2750 4850 50  0001 C CNN
-F 3 "" H 2750 4850 50  0001 C CNN
-	1    2750 4850
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR0117
 U 1 1 625EB8C1
@@ -472,17 +430,6 @@ F 1 "+5V" V 1815 4278 50  0000 L CNN
 F 2 "" H 1800 4150 50  0001 C CNN
 F 3 "" H 1800 4150 50  0001 C CNN
 	1    1800 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0120
-U 1 1 625EDBA6
-P 1800 2800
-F 0 "#PWR0120" H 1800 2650 50  0001 C CNN
-F 1 "+3.3V" V 1815 2928 50  0000 L CNN
-F 2 "" H 1800 2800 50  0001 C CNN
-F 3 "" H 1800 2800 50  0001 C CNN
-	1    1800 2800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -634,4 +581,24 @@ F 3 "" H 9640 2580 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 9640 2580
+Connection ~ 2900 4850
+Text Label 1525 3400 0    39   ~ 0
+XBEE_RX
+Text Label 1525 3300 0    39   ~ 0
+XBEE_TX
+Wire Wire Line
+	1800 3400 1525 3400
+Wire Wire Line
+	1800 3300 1525 3300
+$Comp
+L GPS_Board-rescue:Teensy4.1-teensy U1
+U 1 1 61A899BD
+P 2900 3550
+F 0 "U1" H 2900 6115 50  0000 C CNN
+F 1 "Teensy4.1" H 2900 6024 50  0000 C CNN
+F 2 "GPS Board:Teensy41" H 2500 3950 50  0001 C CNN
+F 3 "" H 2500 3950 50  0001 C CNN
+	1    2900 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

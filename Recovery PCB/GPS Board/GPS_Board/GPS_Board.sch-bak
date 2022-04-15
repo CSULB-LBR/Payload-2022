@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GPS_Board-rescue:Teensy4.1-teensy U1
-U 1 1 61A899BD
-P 2900 3550
-F 0 "U1" H 2900 6115 50  0000 C CNN
-F 1 "Teensy4.1" H 2900 6024 50  0000 C CNN
-F 2 "GPS Board:Teensy41" H 2500 3950 50  0001 C CNN
-F 3 "" H 2500 3950 50  0001 C CNN
-	1    2900 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L GPS_Board:XT30-M J1
 U 1 1 61A95F1A
 P 7225 1400
@@ -156,7 +145,6 @@ Wire Wire Line
 	2900 4850 2950 4850
 Wire Wire Line
 	2950 4850 2950 5125
-Connection ~ 2900 4850
 $Comp
 L power:GND #PWR0109
 U 1 1 61ADB104
@@ -254,17 +242,6 @@ Wire Wire Line
 	4000 3700 4300 3700
 Text Label 4300 3700 2    39   ~ 0
 XBEE_SLEEP
-$Comp
-L power:+3.3V #PWR0110
-U 1 1 625E340B
-P 4000 1600
-F 0 "#PWR0110" H 4000 1450 50  0001 C CNN
-F 1 "+3.3V" V 4015 1728 50  0000 L CNN
-F 2 "" H 4000 1600 50  0001 C CNN
-F 3 "" H 4000 1600 50  0001 C CNN
-	1    4000 1600
-	0    1    1    0   
-$EndComp
 Text Label 6675 2125 2    39   ~ 0
 XBee_MOSI
 Wire Wire Line
@@ -313,10 +290,10 @@ XBEE_SCL
 Text Label 6675 1925 2    39   ~ 0
 XBEE_SLEEP
 $Comp
-L GPS_Board:D24V22F5_VoltageRegulator U?
+L GPS_Board:D24V22F5_VoltageRegulator U2
 U 1 1 6257FB96
 P 9300 1900
-F 0 "U?" H 9578 1946 50  0000 L CNN
+F 0 "U2" H 9578 1946 50  0000 L CNN
 F 1 "D24V22F5_VoltageRegulator" H 9578 1855 50  0000 L CNN
 F 2 "GPS Board:D24V22F5_VoltageRegulator" H 9750 3100 50  0001 C CNN
 F 3 "" H 9750 3100 50  0001 C CNN
@@ -370,10 +347,10 @@ F 3 "" H 8950 2000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GPS_Board:LD1117v33 U?
+L GPS_Board:LD1117v33 U3
 U 1 1 625AB452
 P 9300 2675
-F 0 "U?" H 9290 3020 50  0000 C CNN
+F 0 "U3" H 9290 3020 50  0000 C CNN
 F 1 "LD1117v33" H 9290 2929 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 9290 2905 50  0001 C CNN
 F 3 "" H 9290 2905 50  0001 C CNN
@@ -397,10 +374,6 @@ F 3 "" H 9640 2765 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1800 3300 1525 3300
-Wire Wire Line
-	1800 3400 1525 3400
-Wire Wire Line
 	6275 1525 6575 1525
 Wire Wire Line
 	6275 2125 6675 2125
@@ -417,10 +390,6 @@ Wire Wire Line
 Text Label 5150 1325 0    39   ~ 0
 XBEE_TX
 Text Label 5150 1425 0    39   ~ 0
-XBEE_RX
-Text Label 1525 3300 0    39   ~ 0
-XBEE_TX
-Text Label 1525 3400 0    39   ~ 0
 XBEE_RX
 Wire Wire Line
 	1800 1500 1525 1500
@@ -475,17 +444,6 @@ F 3 "" H 1800 4150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR0120
-U 1 1 625EDBA6
-P 1800 2800
-F 0 "#PWR0120" H 1800 2650 50  0001 C CNN
-F 1 "+3.3V" V 1815 2928 50  0000 L CNN
-F 2 "" H 1800 2800 50  0001 C CNN
-F 3 "" H 1800 2800 50  0001 C CNN
-	1    1800 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0121
 U 1 1 625EF2C8
 P 4000 4050
@@ -497,10 +455,10 @@ F 3 "" H 4000 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP8
 U 1 1 625F3DB9
 P 5625 3950
-F 0 "TP?" V 5525 4300 50  0000 C CNN
+F 0 "TP8" V 5525 4300 50  0000 C CNN
 F 1 "TestPoint" V 5625 4350 50  0000 C CNN
 F 2 "" H 5825 3950 50  0001 C CNN
 F 3 "~" H 5825 3950 50  0001 C CNN
@@ -508,10 +466,10 @@ F 3 "~" H 5825 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP7
 U 1 1 625F9755
 P 9655 2451
-F 0 "TP?" V 9609 2639 50  0000 L CNN
+F 0 "TP7" V 9609 2639 50  0000 L CNN
 F 1 "TestPoint" V 9700 2639 50  0000 L CNN
 F 2 "" H 9855 2451 50  0001 C CNN
 F 3 "~" H 9855 2451 50  0001 C CNN
@@ -524,10 +482,10 @@ Wire Wire Line
 	8950 2225 8875 2225
 Connection ~ 8950 2100
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP6
 U 1 1 625FCCAB
 P 8875 2225
-F 0 "TP?" V 8750 2225 50  0000 C CNN
+F 0 "TP6" V 8750 2225 50  0000 C CNN
 F 1 "TestPoint" V 8825 2150 50  0000 C CNN
 F 2 "" H 9075 2225 50  0001 C CNN
 F 3 "~" H 9075 2225 50  0001 C CNN
@@ -542,10 +500,10 @@ Connection ~ 7100 1325
 Wire Wire Line
 	7100 1325 7225 1325
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP4
 U 1 1 62600FE9
 P 7025 1250
-F 0 "TP?" V 7220 1322 50  0000 C CNN
+F 0 "TP4" V 7220 1322 50  0000 C CNN
 F 1 "TestPoint" V 7129 1322 50  0000 C CNN
 F 2 "" H 7225 1250 50  0001 C CNN
 F 3 "~" H 7225 1250 50  0001 C CNN
@@ -588,10 +546,10 @@ Wire Wire Line
 	5425 1225 5425 1075
 Connection ~ 5425 1225
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP3
 U 1 1 62601ADB
 P 5325 1075
-F 0 "TP?" V 5520 1147 50  0000 C CNN
+F 0 "TP3" V 5520 1147 50  0000 C CNN
 F 1 "TestPoint" V 5429 1147 50  0000 C CNN
 F 2 "" H 5525 1075 50  0001 C CNN
 F 3 "~" H 5525 1075 50  0001 C CNN
@@ -601,10 +559,10 @@ $EndComp
 Wire Wire Line
 	5325 1075 5425 1075
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP5
 U 1 1 626043C8
 P 8350 1650
-F 0 "TP?" H 8400 1850 50  0000 L CNN
+F 0 "TP5" H 8400 1850 50  0000 L CNN
 F 1 "TestPoint" H 8400 1750 50  0000 L CNN
 F 2 "" H 8550 1650 50  0001 C CNN
 F 3 "~" H 8550 1650 50  0001 C CNN
@@ -634,4 +592,24 @@ F 3 "" H 9640 2580 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 9640 2580
+Connection ~ 2900 4850
+Text Label 1525 3400 0    39   ~ 0
+XBEE_RX
+Text Label 1525 3300 0    39   ~ 0
+XBEE_TX
+Wire Wire Line
+	1800 3400 1525 3400
+Wire Wire Line
+	1800 3300 1525 3300
+$Comp
+L GPS_Board-rescue:Teensy4.1-teensy U1
+U 1 1 61A899BD
+P 2900 3550
+F 0 "U1" H 2900 6115 50  0000 C CNN
+F 1 "Teensy4.1" H 2900 6024 50  0000 C CNN
+F 2 "GPS Board:Teensy41" H 2500 3950 50  0001 C CNN
+F 3 "" H 2500 3950 50  0001 C CNN
+	1    2900 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
