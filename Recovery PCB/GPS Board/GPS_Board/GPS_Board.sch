@@ -170,10 +170,6 @@ F 3 "" H 2950 5125 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4000 2200 4300 2200
-Text Label 4000 2100 0    39   ~ 0
-GPS_SCL
-Text Label 4000 2200 0    39   ~ 0
-GPS_SDA
 Text Label 5450 4100 0    50   ~ 0
 GPS_SCL
 Text Label 5450 4200 0    50   ~ 0
@@ -400,17 +396,6 @@ F 3 "" H 9640 2765 50  0001 C CNN
 	1    9640 2765
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 625C7E59
-P 9640 2605
-F 0 "#PWR?" H 9640 2455 50  0001 C CNN
-F 1 "+3.3V" V 9655 2733 50  0000 L CNN
-F 2 "" H 9640 2605 50  0001 C CNN
-F 3 "" H 9640 2605 50  0001 C CNN
-	1    9640 2605
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1800 3300 1525 3300
 Wire Wire Line
@@ -522,19 +507,15 @@ F 3 "~" H 5825 3950 50  0001 C CNN
 	1    5625 3950
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9650 2600 9650 2525
-Wire Wire Line
-	9650 2525 10125 2525
 $Comp
 L Connector:TestPoint TP?
 U 1 1 625F9755
-P 10125 2525
-F 0 "TP?" V 10079 2713 50  0000 L CNN
-F 1 "TestPoint" V 10170 2713 50  0000 L CNN
-F 2 "" H 10325 2525 50  0001 C CNN
-F 3 "~" H 10325 2525 50  0001 C CNN
-	1    10125 2525
+P 9655 2451
+F 0 "TP?" V 9609 2639 50  0000 L CNN
+F 1 "TestPoint" V 9700 2639 50  0000 L CNN
+F 2 "" H 9855 2451 50  0001 C CNN
+F 3 "~" H 9855 2451 50  0001 C CNN
+	1    9655 2451
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -633,4 +614,24 @@ $EndComp
 Connection ~ 8350 1650
 Wire Wire Line
 	8350 1650 8575 1650
+Text Label 4000 2100 0    39   ~ 0
+GPS_SCL
+Text Label 4000 2200 0    39   ~ 0
+GPS_SDA
+Wire Wire Line
+	9640 2580 9640 2451
+Wire Wire Line
+	9640 2451 9655 2451
+$Comp
+L power:+3.3V #PWR?
+U 1 1 625C7E59
+P 9640 2580
+F 0 "#PWR?" H 9640 2430 50  0001 C CNN
+F 1 "+3.3V" V 9655 2708 50  0000 L CNN
+F 2 "" H 9640 2580 50  0001 C CNN
+F 3 "" H 9640 2580 50  0001 C CNN
+	1    9640 2580
+	0    1    1    0   
+$EndComp
+Connection ~ 9640 2580
 $EndSCHEMATC
