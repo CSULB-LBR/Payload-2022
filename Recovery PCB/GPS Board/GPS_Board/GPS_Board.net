@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\Users\\Stati\\OneDrive - CSULB\\Projects-DESKTOP-05J5TOQ\\Clubs and Organizations\\LBR\\Payload-2022-Electrical\\Recovery PCB\\GPS Board\\GPS_Board\\GPS_Board.sch")
-    (date "4/15/2022 4:57:58 AM")
+    (date "4/15/2022 5:58:35 AM")
     (tool "Eeschema (5.1.10)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

@@ -175,10 +175,10 @@ F 3 "" H 5550 3800 50  0001 C CNN
 	1    5550 3800
 	0    -1   -1   0   
 $EndComp
-Text Label 4315 3400 2    39   ~ 0
+Text Label 1485 2300 0    39   ~ 0
 GPS_RESET
 Wire Wire Line
-	4000 3400 4315 3400
+	1800 2300 1485 2300
 Text Label 7400 3800 2    39   ~ 0
 GPS_RESET
 Wire Wire Line
@@ -229,8 +229,8 @@ XBee_RESET
 Text Label 5150 1725 0    39   ~ 0
 XBee_PWM
 Wire Wire Line
-	4000 1800 4325 1800
-Text Label 4325 1800 2    39   ~ 0
+	1800 3700 1475 3700
+Text Label 1475 3700 0    39   ~ 0
 XBee_PWM
 Text Label 5150 2025 0    39   ~ 0
 XBee_DTR
@@ -239,8 +239,8 @@ Wire Wire Line
 Text Label 4300 3200 2    39   ~ 0
 XBee_DTR
 Wire Wire Line
-	4000 3700 4300 3700
-Text Label 4300 3700 2    39   ~ 0
+	1800 2900 1500 2900
+Text Label 1500 2900 0    39   ~ 0
 XBEE_SLEEP
 Text Label 6675 2125 2    39   ~ 0
 XBee_MOSI
