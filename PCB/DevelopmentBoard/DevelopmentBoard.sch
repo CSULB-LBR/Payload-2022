@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR0164
+L DevelopmentBoard-rescue:GND-power #PWR0164
 U 1 1 61619131
 P 4400 15500
 F 0 "#PWR0164" H 4400 15250 50  0001 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 4400 15500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0165
+L DevelopmentBoard-rescue:+5V-power #PWR0165
 U 1 1 6161BA5A
 P 4400 15600
 F 0 "#PWR0165" H 4400 15450 50  0001 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 4400 15600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0166
+L DevelopmentBoard-rescue:GND-power #PWR0166
 U 1 1 61656710
 P 1850 15200
 F 0 "#PWR0166" H 1850 14950 50  0001 C CNN
@@ -47,7 +47,7 @@ F 3 "" H 1850 15200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR0167
+L DevelopmentBoard-rescue:+12V-power #PWR0167
 U 1 1 61660D0C
 P 1850 15300
 F 0 "#PWR0167" H 1850 15150 50  0001 C CNN
@@ -60,7 +60,7 @@ $EndComp
 Wire Wire Line
 	1750 15300 1850 15300
 $Comp
-L power:GND #PWR0168
+L DevelopmentBoard-rescue:GND-power #PWR0168
 U 1 1 6161AEF3
 P 3600 15600
 F 0 "#PWR0168" H 3600 15350 50  0001 C CNN
@@ -88,7 +88,7 @@ SDA
 Wire Wire Line
 	3400 17300 3050 17300
 $Comp
-L power:GND #PWR0171
+L DevelopmentBoard-rescue:GND-power #PWR0171
 U 1 1 616717DD
 P 3400 17100
 F 0 "#PWR0171" H 3400 16850 50  0001 C CNN
@@ -99,7 +99,7 @@ F 3 "" H 3400 17100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0172
+L DevelopmentBoard-rescue:+5V-power #PWR0172
 U 1 1 6167029D
 P 3400 17200
 F 0 "#PWR0172" H 3400 17050 50  0001 C CNN
@@ -132,7 +132,7 @@ F 3 "" H 4500 17900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR0177
+L DevelopmentBoard-rescue:+3.3V-power #PWR0177
 U 1 1 6160D985
 P 2000 17000
 F 0 "#PWR0177" H 2000 16850 50  0001 C CNN
@@ -143,7 +143,7 @@ F 3 "" H 2000 17000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0178
+L DevelopmentBoard-rescue:+3.3V-power #PWR0178
 U 1 1 6160D97F
 P 1600 17000
 F 0 "#PWR0178" H 1600 16850 50  0001 C CNN
@@ -154,7 +154,7 @@ F 3 "" H 1600 17000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R1
+L DevelopmentBoard-rescue:R_Small_US-Device R1
 U 1 1 6160D96F
 P 1600 17100
 F 0 "R1" H 1668 17146 50  0000 L CNN
@@ -165,7 +165,7 @@ F 3 "~" H 1600 17100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R3
+L DevelopmentBoard-rescue:R_Small_US-Device R3
 U 1 1 6160D975
 P 2000 17100
 F 0 "R3" H 2068 17146 50  0000 L CNN
@@ -269,7 +269,7 @@ SDA
 Text Label 8000 10750 2    50   ~ 0
 SCL
 $Comp
-L power:+5V #PWR0208
+L DevelopmentBoard-rescue:+5V-power #PWR0208
 U 1 1 61DC74CC
 P 7750 10950
 F 0 "#PWR0208" H 7750 10800 50  0001 C CNN
@@ -280,7 +280,7 @@ F 3 "" H 7750 10950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0207
+L DevelopmentBoard-rescue:GND-power #PWR0207
 U 1 1 61DC5E51
 P 7750 11050
 F 0 "#PWR0207" H 7750 10800 50  0001 C CNN
@@ -321,7 +321,7 @@ $EndComp
 Wire Wire Line
 	1750 15700 2050 15700
 $Comp
-L power:GND #PWR0101
+L DevelopmentBoard-rescue:GND-power #PWR0101
 U 1 1 6235DC57
 P 2200 15850
 F 0 "#PWR0101" H 2200 15600 50  0001 C CNN
@@ -332,7 +332,7 @@ F 3 "" H 2200 15850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0102
+L DevelopmentBoard-rescue:GND-power #PWR0102
 U 1 1 6236A06D
 P 2200 15950
 F 0 "#PWR0102" H 2200 15700 50  0001 C CNN
@@ -343,7 +343,7 @@ F 3 "" H 2200 15950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0103
+L DevelopmentBoard-rescue:+5V-power #PWR0103
 U 1 1 62384BC7
 P 2250 16050
 F 0 "#PWR0103" H 2250 15900 50  0001 C CNN
@@ -428,7 +428,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 2550 8100 2550
 $Comp
-L power:GND #PWR0106
+L DevelopmentBoard-rescue:GND-power #PWR0106
 U 1 1 62490609
 P 8100 2550
 F 0 "#PWR0106" H 8100 2300 50  0001 C CNN
@@ -439,7 +439,7 @@ F 3 "" H 8100 2550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0107
+L DevelopmentBoard-rescue:GND-power #PWR0107
 U 1 1 6249144C
 P 8250 3050
 F 0 "#PWR0107" H 8250 2800 50  0001 C CNN
@@ -466,7 +466,7 @@ CS_ADC
 Wire Wire Line
 	1600 3650 1950 3650
 $Comp
-L Device:R_Small_US R2
+L DevelopmentBoard-rescue:R_Small_US-Device R2
 U 1 1 624B7DEB
 P 6650 2350
 F 0 "R2" V 6600 2050 50  0000 C CNN
@@ -477,7 +477,7 @@ F 3 "~" H 6650 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R4
+L DevelopmentBoard-rescue:R_Small_US-Device R4
 U 1 1 624BB4C6
 P 6650 2450
 F 0 "R4" V 6600 2150 50  0000 C CNN
@@ -488,7 +488,7 @@ F 3 "~" H 6650 2450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R6
+L DevelopmentBoard-rescue:R_Small_US-Device R6
 U 1 1 624BDAC4
 P 6650 2550
 F 0 "R6" V 6600 2250 50  0000 C CNN
@@ -499,7 +499,7 @@ F 3 "~" H 6650 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R11
+L DevelopmentBoard-rescue:R_Small_US-Device R11
 U 1 1 624BE5AF
 P 6650 2650
 F 0 "R11" V 6600 2350 50  0000 C CNN
@@ -510,7 +510,7 @@ F 3 "~" H 6650 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R12
+L DevelopmentBoard-rescue:R_Small_US-Device R12
 U 1 1 624BF3CC
 P 6650 2750
 F 0 "R12" V 6600 2450 50  0000 C CNN
@@ -521,7 +521,7 @@ F 3 "~" H 6650 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R13
+L DevelopmentBoard-rescue:R_Small_US-Device R13
 U 1 1 624BFB63
 P 6650 2850
 F 0 "R13" V 6600 2550 50  0000 C CNN
@@ -532,7 +532,7 @@ F 3 "~" H 6650 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R14
+L DevelopmentBoard-rescue:R_Small_US-Device R14
 U 1 1 624C06DD
 P 6650 2950
 F 0 "R14" V 6600 2650 50  0000 C CNN
@@ -543,7 +543,7 @@ F 3 "~" H 6650 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R15
+L DevelopmentBoard-rescue:R_Small_US-Device R15
 U 1 1 624C10BC
 P 6650 3050
 F 0 "R15" V 6600 2750 50  0000 C CNN
@@ -586,7 +586,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 3050 6550 3050
 $Comp
-L Connector:TestPoint TP4
+L DevelopmentBoard-rescue:TestPoint-Connector TP4
 U 1 1 62563BD3
 P 1550 16050
 F 0 "TP4" H 1608 16168 50  0000 L CNN
@@ -597,7 +597,7 @@ F 3 "~" H 1750 16050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0108
+L DevelopmentBoard-rescue:+5V-power #PWR0108
 U 1 1 62568910
 P 1550 16050
 F 0 "#PWR0108" H 1550 15900 50  0001 C CNN
@@ -608,7 +608,7 @@ F 3 "" H 1550 16050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L DevelopmentBoard-rescue:TestPoint-Connector TP3
 U 1 1 6256C309
 P 1100 16050
 F 0 "TP3" H 1158 16168 50  0000 L CNN
@@ -619,7 +619,7 @@ F 3 "~" H 1300 16050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0109
+L DevelopmentBoard-rescue:GND-power #PWR0109
 U 1 1 6256D475
 P 1100 16050
 F 0 "#PWR0109" H 1100 15800 50  0001 C CNN
@@ -666,7 +666,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 11750 6400 11750
 $Comp
-L power:GND #PWR0110
+L DevelopmentBoard-rescue:GND-power #PWR0110
 U 1 1 62628D89
 P 6200 11950
 F 0 "#PWR0110" H 6200 11700 50  0001 C CNN
@@ -677,7 +677,7 @@ F 3 "" H 6200 11950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0111
+L DevelopmentBoard-rescue:+5V-power #PWR0111
 U 1 1 62629E2C
 P 6200 11850
 F 0 "#PWR0111" H 6200 11700 50  0001 C CNN
@@ -703,7 +703,7 @@ F 3 "" H 7700 12100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR0112
+L DevelopmentBoard-rescue:+5V-power #PWR0112
 U 1 1 626358DD
 P 7850 12050
 F 0 "#PWR0112" H 7850 11900 50  0001 C CNN
@@ -714,7 +714,7 @@ F 3 "" H 7850 12050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0113
+L DevelopmentBoard-rescue:GND-power #PWR0113
 U 1 1 6263718E
 P 7850 12150
 F 0 "#PWR0113" H 7850 11900 50  0001 C CNN
@@ -741,7 +741,7 @@ MOSI
 Text Label 7850 11950 0    50   ~ 0
 CS_ADC
 $Comp
-L Device:R_Small_US R5
+L DevelopmentBoard-rescue:R_Small_US-Device R5
 U 1 1 626DE972
 P 1150 17100
 F 0 "R5" H 1218 17146 50  0000 L CNN
@@ -752,7 +752,7 @@ F 3 "~" H 1150 17100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0115
+L DevelopmentBoard-rescue:+3.3V-power #PWR0115
 U 1 1 626DFEE0
 P 1150 17000
 F 0 "#PWR0115" H 1150 16850 50  0001 C CNN
@@ -775,7 +775,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 2450 1750 2450
 $Comp
-L power:+5V #PWR0116
+L DevelopmentBoard-rescue:+5V-power #PWR0116
 U 1 1 623DD84B
 P 4050 2350
 F 0 "#PWR0116" H 4050 2200 50  0001 C CNN
@@ -786,7 +786,7 @@ F 3 "" H 4050 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR0117
+L DevelopmentBoard-rescue:+3.3V-power #PWR0117
 U 1 1 62402BAE
 P 4050 2450
 F 0 "#PWR0117" H 4050 2300 50  0001 C CNN
@@ -813,7 +813,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 2750 8250 2750
 $Comp
-L power:+5V #PWR0104
+L DevelopmentBoard-rescue:+5V-power #PWR0104
 U 1 1 6232D937
 P 8100 2350
 F 0 "#PWR0104" H 8100 2200 50  0001 C CNN
@@ -824,7 +824,7 @@ F 3 "" H 8100 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0105
+L DevelopmentBoard-rescue:+5V-power #PWR0105
 U 1 1 6232E513
 P 8100 2450
 F 0 "#PWR0105" H 8100 2300 50  0001 C CNN
@@ -835,7 +835,7 @@ F 3 "" H 8100 2450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0118
+L DevelopmentBoard-rescue:GND-power #PWR0118
 U 1 1 62355844
 P 4050 4550
 F 0 "#PWR0118" H 4050 4300 50  0001 C CNN
@@ -846,7 +846,7 @@ F 3 "" H 4050 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0119
+L DevelopmentBoard-rescue:GND-power #PWR0119
 U 1 1 62356241
 P 4050 4450
 F 0 "#PWR0119" H 4050 4200 50  0001 C CNN
@@ -857,7 +857,7 @@ F 3 "" H 4050 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L DevelopmentBoard-rescue:TestPoint-Connector TP2
 U 1 1 623429F1
 P 1100 15350
 F 0 "TP2" H 1158 15468 50  0000 L CNN
@@ -868,7 +868,7 @@ F 3 "~" H 1300 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0120
+L DevelopmentBoard-rescue:+3V3-power #PWR0120
 U 1 1 623433B8
 P 1100 15350
 F 0 "#PWR0120" H 1100 15200 50  0001 C CNN
@@ -887,7 +887,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 15700 3400 15700
 $Comp
-L Connector:TestPoint TP1
+L DevelopmentBoard-rescue:TestPoint-Connector TP1
 U 1 1 626A437A
 P 2400 15250
 F 0 "TP1" H 2458 15368 50  0000 L CNN
@@ -904,4 +904,70 @@ Wire Wire Line
 Wire Wire Line
 	2050 15400 2050 15700
 Connection ~ 2050 15700
+$Comp
+L DevelopmentBoard:VN-100_Breakout U?
+U 1 1 625A78A9
+P 2950 9650
+F 0 "U?" H 2950 10415 50  0000 C CNN
+F 1 "VN-100_Breakout" H 2950 10324 50  0000 C CNN
+F 2 "" H 3000 9950 50  0001 C CNN
+F 3 "" H 3000 9950 50  0001 C CNN
+	1    2950 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L DevelopmentBoard-rescue:+5V-power #PWR?
+U 1 1 625ABE16
+P 3650 9300
+F 0 "#PWR?" H 3650 9150 50  0001 C CNN
+F 1 "+5V-power" H 3665 9473 50  0000 C CNN
+F 2 "" H 3650 9300 50  0001 C CNN
+F 3 "" H 3650 9300 50  0001 C CNN
+	1    3650 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 9300 3650 9300
+$Comp
+L DevelopmentBoard-rescue:GND-power #PWR?
+U 1 1 625B8F57
+P 3400 10200
+F 0 "#PWR?" H 3400 9950 50  0001 C CNN
+F 1 "GND-power" H 3405 10027 50  0000 C CNN
+F 2 "" H 3400 10200 50  0001 C CNN
+F 3 "" H 3400 10200 50  0001 C CNN
+	1    3400 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 10050 3400 10200
+Connection ~ 3400 10200
+Wire Wire Line
+	2500 9450 2300 9450
+Text Label 2300 9450 0    50   ~ 0
+SCLK
+Wire Wire Line
+	2500 9600 2300 9600
+Text Label 2300 9600 0    50   ~ 0
+MOSI
+Wire Wire Line
+	2500 9750 2300 9750
+Text Label 2300 9750 0    50   ~ 0
+MISO
+Text Label 4350 2650 2    50   ~ 0
+NAV_RX
+Wire Wire Line
+	4050 2750 4350 2750
+Wire Wire Line
+	4050 2650 4350 2650
+Text Label 4350 2750 2    50   ~ 0
+NAV_TX
+Wire Wire Line
+	3400 9900 3700 9900
+Text Label 3700 9750 2    50   ~ 0
+NAV_TX
+Wire Wire Line
+	3400 9750 3700 9750
+Text Label 3700 9900 2    50   ~ 0
+NAV_RX
 $EndSCHEMATC
