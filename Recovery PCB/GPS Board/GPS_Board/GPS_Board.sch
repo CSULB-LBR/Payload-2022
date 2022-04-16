@@ -120,17 +120,6 @@ F 3 "~" H 3100 4850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP1
-U 1 1 61ACF9DD
-P 2600 4850
-F 0 "TP1" H 2900 4900 50  0000 R CNN
-F 1 "TestPoint" H 3000 4975 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2800 4850 50  0001 C CNN
-F 3 "~" H 2800 4850 50  0001 C CNN
-	1    2600 4850
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+5V #PWR0107
 U 1 1 61AD1665
 P 4000 1400
@@ -198,13 +187,13 @@ GPS_INT
 Text Label 7400 3700 2    39   ~ 0
 GPS_INT
 Text Label 4325 2700 2    39   ~ 0
-XBee_SCK
+XBEE_SCK
 Wire Wire Line
 	4000 2700 4325 2700
 Text Label 6575 1425 2    39   ~ 0
-XBee_SCK
+XBEE_SCK
 Text Label 1525 2500 0    39   ~ 0
-XBee_CS
+XBEE_CS
 Wire Wire Line
 	1525 2500 1800 2500
 $Comp
@@ -219,31 +208,29 @@ F 3 "" H 5275 1225 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 1525 2700 0    39   ~ 0
-XBee_MISO
+XBEE_MISO
 Wire Wire Line
 	1800 2700 1525 2700
 Wire Wire Line
 	4000 3300 4325 3300
 Text Label 4325 3300 2    39   ~ 0
-XBee_RESET
+XBEE_RESET
 Text Label 5150 1725 0    39   ~ 0
-XBee_PWM
+XBEE_PWM
 Wire Wire Line
 	1800 3700 1475 3700
 Text Label 1475 3700 0    39   ~ 0
-XBee_PWM
+XBEE_PWM
 Text Label 5150 2025 0    39   ~ 0
-XBee_DTR
+XBEE_DTR
 Wire Wire Line
 	4000 3200 4300 3200
 Text Label 4300 3200 2    39   ~ 0
-XBee_DTR
-Wire Wire Line
-	1800 2900 1500 2900
-Text Label 1500 2900 0    39   ~ 0
+XBEE_DTR
+Text Label 1494 3100 0    39   ~ 0
 XBEE_SLEEP
 Text Label 6675 2125 2    39   ~ 0
-XBee_MOSI
+XBEE_MOSI
 Wire Wire Line
 	5425 2025 5150 2025
 Wire Wire Line
@@ -264,13 +251,13 @@ $EndComp
 Wire Wire Line
 	1800 2600 1525 2600
 Text Label 1525 2600 0    39   ~ 0
-XBee_MOSI
+XBEE_MOSI
 Text Label 6575 1525 2    39   ~ 0
-XBee_CS
+XBEE_CS
 Text Label 5150 1625 0    39   ~ 0
-XBee_Reset
+XBEE_RESET
 Text Label 5150 1525 0    39   ~ 0
-XBee_MISO
+XBEE_MISO
 Wire Wire Line
 	5150 1525 5425 1525
 Wire Wire Line
@@ -279,13 +266,9 @@ Text Label 5150 1825 0    39   ~ 0
 XBEE_SDA
 Text Label 6575 1325 2    39   ~ 0
 XBEE_SCL
-Wire Wire Line
-	4000 2300 4300 2300
-Wire Wire Line
-	4000 2400 4300 2400
-Text Label 4300 2300 2    39   ~ 0
+Text Label 1493 3000 0    39   ~ 0
 XBEE_SDA
-Text Label 4300 2400 2    39   ~ 0
+Text Label 1492 2900 0    39   ~ 0
 XBEE_SCL
 Text Label 6675 1925 2    39   ~ 0
 XBEE_SLEEP
@@ -449,7 +432,7 @@ U 1 1 625F3DB9
 P 5625 3950
 F 0 "TP8" V 5525 4300 50  0000 C CNN
 F 1 "TestPoint" V 5625 4350 50  0000 C CNN
-F 2 "" H 5825 3950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5825 3950 50  0001 C CNN
 F 3 "~" H 5825 3950 50  0001 C CNN
 	1    5625 3950
 	0    -1   -1   0   
@@ -602,10 +585,10 @@ F 3 "" H 2500 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP9
 U 1 1 625C34C1
 P 5400 2175
-F 0 "TP?" V 5175 2300 50  0000 C CNN
+F 0 "TP9" V 5175 2300 50  0000 C CNN
 F 1 "TestPoint" V 5275 2400 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5600 2175 50  0001 C CNN
 F 3 "~" H 5600 2175 50  0001 C CNN
@@ -621,4 +604,246 @@ Wire Wire Line
 Connection ~ 5400 2125
 Wire Wire Line
 	5400 2125 5425 2125
+$Comp
+L GPS_Board:conn_recovery8 U6
+U 1 1 625CF541
+P 6900 5900
+F 0 "U6" H 6913 5255 50  0000 C CNN
+F 1 "conn_recovery8" H 6913 5346 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6900 5900 50  0001 C CNN
+F 3 "" H 6900 5900 50  0001 C CNN
+	1    6900 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US 4.7k1
+U 1 1 625D61CA
+P 8350 4950
+F 0 "4.7k1" H 8418 4996 50  0000 L CNN
+F 1 "R_Small_US" H 8418 4905 50  0000 L CNN
+F 2 "GPS Board:0603" H 8350 4950 50  0001 C CNN
+F 3 "~" H 8350 4950 50  0001 C CNN
+	1    8350 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US 4.7k2
+U 1 1 625D7ED9
+P 8925 4950
+F 0 "4.7k2" H 8993 4996 50  0000 L CNN
+F 1 "R_Small_US" H 8993 4905 50  0000 L CNN
+F 2 "GPS Board:0603" H 8925 4950 50  0001 C CNN
+F 3 "~" H 8925 4950 50  0001 C CNN
+	1    8925 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US 4.7k3
+U 1 1 625DB5C9
+P 9575 4975
+F 0 "4.7k3" H 9643 5021 50  0000 L CNN
+F 1 "R_Small_US" H 9643 4930 50  0000 L CNN
+F 2 "GPS Board:0603" H 9575 4975 50  0001 C CNN
+F 3 "~" H 9575 4975 50  0001 C CNN
+	1    9575 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US 4.7k4
+U 1 1 625DB5CF
+P 10150 4975
+F 0 "4.7k4" H 10218 5021 50  0000 L CNN
+F 1 "R_Small_US" H 10218 4930 50  0000 L CNN
+F 2 "GPS Board:0603" H 10150 4975 50  0001 C CNN
+F 3 "~" H 10150 4975 50  0001 C CNN
+	1    10150 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 625DF02C
+P 8350 4850
+F 0 "#PWR0110" H 8350 4700 50  0001 C CNN
+F 1 "+3.3V" H 8365 5023 50  0000 C CNN
+F 2 "" H 8350 4850 50  0001 C CNN
+F 3 "" H 8350 4850 50  0001 C CNN
+	1    8350 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 625DFC55
+P 8925 4850
+F 0 "#PWR0116" H 8925 4700 50  0001 C CNN
+F 1 "+3.3V" H 8940 5023 50  0000 C CNN
+F 2 "" H 8925 4850 50  0001 C CNN
+F 3 "" H 8925 4850 50  0001 C CNN
+	1    8925 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0120
+U 1 1 625E0C28
+P 9575 4875
+F 0 "#PWR0120" H 9575 4725 50  0001 C CNN
+F 1 "+3.3V" H 9590 5048 50  0000 C CNN
+F 2 "" H 9575 4875 50  0001 C CNN
+F 3 "" H 9575 4875 50  0001 C CNN
+	1    9575 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0123
+U 1 1 625E19B5
+P 10150 4875
+F 0 "#PWR0123" H 10150 4725 50  0001 C CNN
+F 1 "+3.3V" H 10165 5048 50  0000 C CNN
+F 2 "" H 10150 4875 50  0001 C CNN
+F 3 "" H 10150 4875 50  0001 C CNN
+	1    10150 4875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5050 8350 5250
+Wire Wire Line
+	8925 5050 8925 5250
+Wire Wire Line
+	9575 5075 9575 5250
+Wire Wire Line
+	10150 5075 10150 5250
+Text Label 8350 5250 0    50   ~ 0
+GPS_SCL
+Text Label 8925 5250 0    50   ~ 0
+GPS_SDA
+Text Label 9575 5250 0    50   ~ 0
+XBEE_SCL
+Text Label 10150 5250 0    50   ~ 0
+XBEE_SDA
+Wire Wire Line
+	7100 6200 7475 6200
+Wire Wire Line
+	7100 6100 7475 6100
+$Comp
+L power:GND #PWR0124
+U 1 1 625B254D
+P 7100 6000
+F 0 "#PWR0124" H 7100 5750 50  0001 C CNN
+F 1 "GND" V 7105 5872 50  0000 R CNN
+F 2 "" H 7100 6000 50  0001 C CNN
+F 3 "" H 7100 6000 50  0001 C CNN
+	1    7100 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7100 5600 7475 5600
+Wire Wire Line
+	7100 5700 7475 5700
+Text Label 7475 5600 2    50   ~ 0
+GPS_TX
+Text Label 7475 5700 2    50   ~ 0
+GPS_RX
+Text Label 7475 6100 2    50   ~ 0
+GPS_SCL
+Text Label 7475 6200 2    50   ~ 0
+GPS_SDA
+$Comp
+L GPS_Board:conn_recovery10 U5
+U 1 1 625D4269
+P 4875 6875
+F 0 "U5" H 4923 6130 50  0000 C CNN
+F 1 "conn_recovery10" H 4923 6221 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 4875 7205 50  0001 C CNN
+F 3 "" H 4875 7205 50  0001 C CNN
+	1    4875 6875
+	-1   0    0    1   
+$EndComp
+Text Label 3639 6425 2    50   ~ 0
+XBEE_TX
+Text Label 3639 6524 2    50   ~ 0
+XBEE_RX
+Wire Wire Line
+	3214 6424 3639 6425
+Wire Wire Line
+	3214 6724 3635 6724
+Wire Wire Line
+	3214 6824 3636 6824
+Wire Wire Line
+	3214 6924 3637 6924
+Wire Wire Line
+	3214 7124 3637 7124
+$Comp
+L GPS_Board:conn_recovery10 U4
+U 1 1 625C6FA0
+P 3024 6824
+F 0 "U4" H 3072 6079 50  0000 C CNN
+F 1 "conn_recovery10" H 3072 6170 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 3024 7154 50  0001 C CNN
+F 3 "" H 3024 7154 50  0001 C CNN
+	1    3024 6824
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3214 6524 3639 6524
+Wire Wire Line
+	3214 6624 3637 6624
+Text Label 3637 6624 2    50   ~ 0
+XBEE_MISO
+Text Label 3635 6724 2    50   ~ 0
+XBEE_RESET
+Text Label 3636 6824 2    50   ~ 0
+XBEE_PWM
+Text Label 3637 6924 2    50   ~ 0
+XBEE_SDA
+Text Label 3637 7124 2    50   ~ 0
+XBEE_DTR
+Wire Wire Line
+	5065 6475 5481 6475
+Wire Wire Line
+	5481 6475 5481 6474
+Wire Wire Line
+	5065 6675 5481 6675
+Wire Wire Line
+	5065 7275 5418 7275
+Text Label 5418 7275 2    50   ~ 0
+XBEE_MOSI
+Text Label 5476 7075 2    50   ~ 0
+XBEE_SLEEP
+Wire Wire Line
+	5065 7075 5476 7075
+Wire Wire Line
+	5065 6575 5481 6575
+Text Label 5481 6675 2    50   ~ 0
+XBEE_CS
+Text Label 5481 6575 2    50   ~ 0
+XBEE_SCK
+Text Label 5481 6474 2    50   ~ 0
+XBEE_SCL
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 627DA545
+P 7100 5800
+F 0 "#PWR0125" H 7100 5650 50  0001 C CNN
+F 1 "+3.3V" V 7115 5928 50  0000 L CNN
+F 2 "" H 7100 5800 50  0001 C CNN
+F 3 "" H 7100 5800 50  0001 C CNN
+	1    7100 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0126
+U 1 1 62864185
+P 1800 2800
+F 0 "#PWR0126" H 1800 2650 50  0001 C CNN
+F 1 "+3.3V" V 1815 2928 50  0000 L CNN
+F 2 "" H 1800 2800 50  0001 C CNN
+F 3 "" H 1800 2800 50  0001 C CNN
+	1    1800 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1492 2900 1800 2900
+Wire Wire Line
+	1493 3000 1800 3000
+Wire Wire Line
+	1494 3100 1800 3100
 $EndSCHEMATC
