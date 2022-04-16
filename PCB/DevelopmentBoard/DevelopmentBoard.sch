@@ -349,28 +349,6 @@ F 3 "" H 4050 4450 50  0001 C CNN
 	1    4050 4450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L DevelopmentBoard-rescue:TestPoint-Connector TP2
-U 1 1 623429F1
-P 1100 15350
-F 0 "TP2" H 1158 15468 50  0000 L CNN
-F 1 "TestPoint" H 1150 15400 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1300 15350 50  0001 C CNN
-F 3 "~" H 1300 15350 50  0001 C CNN
-	1    1100 15350
-	1    0    0    -1  
-$EndComp
-$Comp
-L DevelopmentBoard-rescue:+3V3-power #PWR0120
-U 1 1 623433B8
-P 1100 15350
-F 0 "#PWR0120" H 1100 15200 50  0001 C CNN
-F 1 "+3V3" H 1115 15523 50  0000 C CNN
-F 2 "" H 1100 15350 50  0001 C CNN
-F 3 "" H 1100 15350 50  0001 C CNN
-	1    1100 15350
-	-1   0    0    1   
-$EndComp
 Text Label 3200 15800 0    50   ~ 0
 SCL
 Text Label 3200 15700 0    50   ~ 0
@@ -409,7 +387,7 @@ L DevelopmentBoard-rescue:+5V-power #PWR0104
 U 1 1 625ABE16
 P 3650 9300
 F 0 "#PWR0104" H 3650 9150 50  0001 C CNN
-F 1 "+5V-power" H 3665 9473 50  0000 C CNN
+F 1 "+5V-power" H 3900 9400 50  0000 C CNN
 F 2 "" H 3650 9300 50  0001 C CNN
 F 3 "" H 3650 9300 50  0001 C CNN
 	1    3650 9300
@@ -443,13 +421,13 @@ Wire Wire Line
 	2500 9750 2300 9750
 Text Label 2300 9750 0    50   ~ 0
 MISO
-Text Label 3900 9900 2    50   ~ 0
+Text Label 3700 9900 2    50   ~ 0
 NAV_TX
 Wire Wire Line
-	3600 9900 3900 9900
+	3400 9900 3700 9900
 Wire Wire Line
-	3600 9750 3900 9750
-Text Label 3900 9750 2    50   ~ 0
+	3400 9750 3700 9750
+Text Label 3700 9750 2    50   ~ 0
 NAV_RX
 $Comp
 L DevelopmentBoard-rescue:Conn_01x04_MountingPin-PayloadSymbols J5
@@ -573,12 +551,12 @@ Wire Wire Line
 	4050 2550 4050 2450
 Connection ~ 4050 2450
 Wire Wire Line
-	4050 2825 4350 2825
+	4250 2825 4550 2825
 Wire Wire Line
-	4050 2925 4350 2925
-Text Label 4350 2825 2    50   ~ 0
+	4250 2925 4550 2925
+Text Label 4550 2825 2    50   ~ 0
 NAV_RX
-Text Label 4350 2925 2    50   ~ 0
+Text Label 4550 2925 2    50   ~ 0
 NAV_TX
 Text Label 2250 10200 0    50   ~ 0
 SPI_CS
@@ -602,28 +580,6 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5825 12100 50
 F 3 "" H 5825 12100 50  0001 C CNN
 	1    5825 11650
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small_US R2
-U 1 1 625FEBDD
-P 3500 9750
-F 0 "R2" V 3275 9800 50  0000 C CNN
-F 1 "0" V 3350 9800 50  0000 C CNN
-F 2 "DevelopmentBoard:0603" H 3500 9750 50  0001 C CNN
-F 3 "~" H 3500 9750 50  0001 C CNN
-	1    3500 9750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small_US R4
-U 1 1 626003A3
-P 3500 9900
-F 0 "R4" V 3675 9925 50  0000 C CNN
-F 1 "0" V 3600 9900 50  0000 C CNN
-F 2 "DevelopmentBoard:0603" H 3500 9900 50  0001 C CNN
-F 3 "~" H 3500 9900 50  0001 C CNN
-	1    3500 9900
-	0    1    1    0   
 $EndComp
 $Comp
 L DevelopmentBoard-rescue:+5V-power #PWR0106
@@ -779,4 +735,147 @@ Text Label 1550 2950 0    50   ~ 0
 CH1
 Text Label 1550 2850 0    50   ~ 0
 CH0
+Text Label 4825 9625 2    50   ~ 0
+NAV_RX
+Wire Wire Line
+	4525 9625 4825 9625
+Text Label 4825 9725 2    50   ~ 0
+NAV_TX
+Connection ~ 4525 9925
+Wire Wire Line
+	4525 9825 4525 9925
+$Comp
+L power:GND #PWR0114
+U 1 1 6293F1F2
+P 4525 9925
+F 0 "#PWR0114" H 4525 9675 50  0001 C CNN
+F 1 "GND" H 4530 9752 50  0000 C CNN
+F 2 "" H 4525 9925 50  0001 C CNN
+F 3 "" H 4525 9925 50  0001 C CNN
+	1    4525 9925
+	1    0    0    -1  
+$EndComp
+$Comp
+L DevelopmentBoard:Conn_01x08_DevBoardSymbols U6
+U 1 1 6293845E
+P 4325 9325
+F 0 "U6" H 4275 10050 50  0000 L CNN
+F 1 "Conn_01x08_DevBoardSymbols" H 3675 9050 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 4325 9775 50  0001 C CNN
+F 3 "" H 4325 9775 50  0001 C CNN
+	1    4325 9325
+	-1   0    0    1   
+$EndComp
+$Comp
+L DevelopmentBoard-rescue:+5V-power #PWR0115
+U 1 1 629499D4
+P 5000 9325
+F 0 "#PWR0115" H 5000 9175 50  0001 C CNN
+F 1 "+5V-power" H 5125 9500 50  0000 C CNN
+F 2 "" H 5000 9325 50  0001 C CNN
+F 3 "" H 5000 9325 50  0001 C CNN
+	1    5000 9325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 9600 3900 9600
+Text Label 3900 9600 2    50   ~ 0
+NAV_Restore
+Wire Wire Line
+	3400 9450 3900 9450
+Text Label 3900 9450 2    50   ~ 0
+NAV_Sync
+Text Label 3775 9150 2    50   ~ 0
+NAV_EN
+Wire Wire Line
+	3400 9150 3775 9150
+Wire Wire Line
+	4525 9325 5000 9325
+Text Label 4900 9225 2    50   ~ 0
+NAV_EN
+Wire Wire Line
+	4525 9225 4900 9225
+Wire Wire Line
+	4525 9525 5025 9525
+Text Label 5025 9525 2    50   ~ 0
+NAV_Restore
+Wire Wire Line
+	4525 9425 5025 9425
+Text Label 5025 9425 2    50   ~ 0
+NAV_Sync
+Wire Wire Line
+	4525 9725 4825 9725
+$Comp
+L Device:R_Small_US R4
+U 1 1 626003A3
+P 4150 2925
+F 0 "R4" V 4325 2950 50  0000 C CNN
+F 1 "0" V 4250 2925 50  0000 C CNN
+F 2 "DevelopmentBoard:0603" H 4150 2925 50  0001 C CNN
+F 3 "~" H 4150 2925 50  0001 C CNN
+	1    4150 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 625FEBDD
+P 4150 2825
+F 0 "R2" V 4100 2925 50  0000 C CNN
+F 1 "0" V 4100 2775 50  0000 C CNN
+F 2 "DevelopmentBoard:0603" H 4150 2825 50  0001 C CNN
+F 3 "~" H 4150 2825 50  0001 C CNN
+	1    4150 2825
+	0    1    1    0   
+$EndComp
+$Comp
+L DevelopmentBoard:Conn_01x08_DevBoardSymbols U8
+U 1 1 629ABDFA
+P 1600 9450
+F 0 "U8" H 1550 10175 50  0000 L CNN
+F 1 "Conn_01x08_DevBoardSymbols" H 950 9175 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1600 9900 50  0001 C CNN
+F 3 "" H 1600 9900 50  0001 C CNN
+	1    1600 9450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 9550 1800 9550
+Text Label 2000 9550 2    50   ~ 0
+SCLK
+Wire Wire Line
+	2000 9650 1800 9650
+Text Label 2000 9650 2    50   ~ 0
+MOSI
+Wire Wire Line
+	2000 9750 1800 9750
+Text Label 2000 9750 2    50   ~ 0
+MISO
+Text Label 2050 10050 2    50   ~ 0
+SPI_CS
+Wire Wire Line
+	1800 10050 2050 10050
+Wire Wire Line
+	1800 9350 2075 9350
+Wire Wire Line
+	2075 9350 2075 9150
+Wire Wire Line
+	2075 9150 2500 9150
+Wire Wire Line
+	1800 9450 2175 9450
+Wire Wire Line
+	2175 9450 2175 9300
+Wire Wire Line
+	2175 9300 2500 9300
+Wire Wire Line
+	1800 9850 2450 9850
+Wire Wire Line
+	2450 9850 2450 9900
+Wire Wire Line
+	2450 9900 2500 9900
+Wire Wire Line
+	1800 9950 2300 9950
+Wire Wire Line
+	2300 9950 2300 10050
+Wire Wire Line
+	2300 10050 2500 10050
 $EndSCHEMATC
