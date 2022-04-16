@@ -409,18 +409,6 @@ $EndComp
 Wire Wire Line
 	3400 10050 3400 10200
 Connection ~ 3400 10200
-Wire Wire Line
-	2500 9450 2300 9450
-Text Label 2300 9450 0    50   ~ 0
-SCLK
-Wire Wire Line
-	2500 9600 2300 9600
-Text Label 2300 9600 0    50   ~ 0
-MOSI
-Wire Wire Line
-	2500 9750 2300 9750
-Text Label 2300 9750 0    50   ~ 0
-MISO
 Text Label 3700 9900 2    50   ~ 0
 NAV_TX
 Wire Wire Line
@@ -838,28 +826,40 @@ F 3 "" H 1600 9900 50  0001 C CNN
 	1    1600 9450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2000 9550 1800 9550
 Text Label 2000 9550 2    50   ~ 0
 SCLK
-Wire Wire Line
-	2000 9650 1800 9650
 Text Label 2000 9650 2    50   ~ 0
 MOSI
-Wire Wire Line
-	2000 9750 1800 9750
 Text Label 2000 9750 2    50   ~ 0
 MISO
-Text Label 2050 10050 2    50   ~ 0
-SPI_CS
-Wire Wire Line
-	1800 10050 2050 10050
 Wire Wire Line
 	1800 9350 2075 9350
 Wire Wire Line
 	2075 9350 2075 9150
 Wire Wire Line
 	2075 9150 2500 9150
+Wire Wire Line
+	1800 10050 2050 10050
+Text Label 2050 10050 2    50   ~ 0
+SPI_CS
+Wire Wire Line
+	2000 9750 1800 9750
+Wire Wire Line
+	2000 9650 1800 9650
+Wire Wire Line
+	2000 9550 1800 9550
+Text Label 2300 9750 0    50   ~ 0
+MISO
+Wire Wire Line
+	2500 9750 2300 9750
+Text Label 2300 9600 0    50   ~ 0
+MOSI
+Wire Wire Line
+	2500 9600 2300 9600
+Text Label 2300 9450 0    50   ~ 0
+SCLK
+Wire Wire Line
+	2500 9450 2300 9450
 Wire Wire Line
 	1800 9450 2175 9450
 Wire Wire Line
