@@ -838,8 +838,6 @@ Wire Wire Line
 	2075 9350 2075 9150
 Wire Wire Line
 	2075 9150 2500 9150
-Wire Wire Line
-	1800 10050 2050 10050
 Text Label 2050 10050 2    50   ~ 0
 SPI_CS
 Wire Wire Line
@@ -850,16 +848,12 @@ Wire Wire Line
 	2000 9550 1800 9550
 Text Label 2300 9750 0    50   ~ 0
 MISO
-Wire Wire Line
-	2500 9750 2300 9750
 Text Label 2300 9600 0    50   ~ 0
 MOSI
 Wire Wire Line
 	2500 9600 2300 9600
 Text Label 2300 9450 0    50   ~ 0
 SCLK
-Wire Wire Line
-	2500 9450 2300 9450
 Wire Wire Line
 	1800 9450 2175 9450
 Wire Wire Line
@@ -878,4 +872,62 @@ Wire Wire Line
 	2300 9950 2300 10050
 Wire Wire Line
 	2300 10050 2500 10050
+$Comp
+L Device:R_Small_US R14
+U 1 1 625DF917
+P 2100 9650
+F 0 "R14" V 2063 9746 50  0000 C CNN
+F 1 "0" V 2062 9574 50  0000 C CNN
+F 2 "DevelopmentBoard:0603" H 2100 9650 50  0001 C CNN
+F 3 "~" H 2100 9650 50  0001 C CNN
+	1    2100 9650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R15
+U 1 1 625E3DB6
+P 2100 9750
+F 0 "R15" V 2062 9847 50  0000 C CNN
+F 1 " 0" V 2063 9654 50  0000 C CNN
+F 2 "DevelopmentBoard:0603" H 2100 9750 50  0001 C CNN
+F 3 "~" H 2100 9750 50  0001 C CNN
+	1    2100 9750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 10050 2050 10050
+$Comp
+L Device:R_Small_US R16
+U 1 1 625FB119
+P 2150 10050
+F 0 "R16" V 2119 10137 50  0000 C CNN
+F 1 "0" V 2116 9973 50  0000 C CNN
+F 2 "DevelopmentBoard:0603" H 2150 10050 50  0001 C CNN
+F 3 "~" H 2150 10050 50  0001 C CNN
+	1    2150 10050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R13
+U 1 1 625DA403
+P 2100 9550
+F 0 "R13" V 2064 9647 50  0000 C CNN
+F 1 "0" V 2069 9476 50  0000 C CNN
+F 2 "DevelopmentBoard:0603" H 2100 9550 50  0001 C CNN
+F 3 "~" H 2100 9550 50  0001 C CNN
+	1    2100 9550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 9450 2200 9450
+Wire Wire Line
+	2200 9450 2200 9550
+Wire Wire Line
+	2200 9650 2300 9650
+Wire Wire Line
+	2300 9650 2300 9600
+Wire Wire Line
+	2200 9750 2500 9750
+Wire Wire Line
+	2250 10050 2250 10200
 $EndSCHEMATC
