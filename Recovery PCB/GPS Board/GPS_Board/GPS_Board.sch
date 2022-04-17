@@ -572,18 +572,14 @@ F 3 "" H 5550 3675 50  0001 C CNN
 	1    5550 3675
 	0    1    1    0   
 $EndComp
-Text Label 1300 3300 0    39   ~ 0
+Text Label 825  3300 0    39   ~ 0
 XBEE_TX
-Text Label 1300 3400 0    39   ~ 0
+Text Label 825  3400 0    39   ~ 0
 XBEE_RX
-Text Label 1075 1600 0    39   ~ 0
+Text Label 650  1600 0    39   ~ 0
 GPS_RX
-Text Label 1075 1500 0    39   ~ 0
+Text Label 650  1500 0    39   ~ 0
 GPS_TX
-Text Label 1267 2900 0    39   ~ 0
-XBEE_SCL
-Text Label 1268 3000 0    39   ~ 0
-XBEE_SDA
 Text Label 1300 2600 0    39   ~ 0
 XBEE_MOSI
 Text Label 1269 3100 0    39   ~ 0
@@ -635,10 +631,6 @@ Wire Wire Line
 	1268 3000 1800 3000
 Wire Wire Line
 	1267 2900 1800 2900
-Wire Wire Line
-	1300 3300 1800 3300
-Wire Wire Line
-	1300 3400 1800 3400
 Wire Wire Line
 	1300 2600 1800 2600
 Wire Wire Line
@@ -877,4 +869,64 @@ F 3 "" H 2900 4850 50  0001 C CNN
 	1    2900 4850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 626B3F0C
+P 1175 3400
+F 0 "R?" V 1250 3450 50  0000 C CNN
+F 1 "0" V 1250 3350 50  0000 C CNN
+F 2 "GPS Board:0603_BACK" H 1175 3400 50  0001 C CNN
+F 3 "~" H 1175 3400 50  0001 C CNN
+	1    1175 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1075 3400 825  3400
+$Comp
+L Device:R_Small_US R?
+U 1 1 626EC8A6
+P 1175 3300
+F 0 "R?" V 1075 3350 50  0000 C CNN
+F 1 "0" V 1075 3250 50  0000 C CNN
+F 2 "GPS Board:0603_BACK" H 1175 3300 50  0001 C CNN
+F 3 "~" H 1175 3300 50  0001 C CNN
+	1    1175 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1275 3300 1800 3300
+Wire Wire Line
+	1275 3400 1800 3400
+Wire Wire Line
+	825  3300 1075 3300
+Text Label 1268 3000 0    39   ~ 0
+XBEE_SDA
+Text Label 1267 2900 0    39   ~ 0
+XBEE_SCL
+$Comp
+L Device:R_Small_US R?
+U 1 1 6272BC16
+P 975 1600
+F 0 "R?" V 1050 1650 50  0000 C CNN
+F 1 "0" V 1050 1550 50  0000 C CNN
+F 2 "GPS Board:0603_BACK" H 975 1600 50  0001 C CNN
+F 3 "~" H 975 1600 50  0001 C CNN
+	1    975  1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 627327EE
+P 975 1500
+F 0 "R?" V 1050 1550 50  0000 C CNN
+F 1 "0" V 1050 1450 50  0000 C CNN
+F 2 "GPS Board:0603_BACK" H 975 1500 50  0001 C CNN
+F 3 "~" H 975 1500 50  0001 C CNN
+	1    975  1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	875  1500 650  1500
+Wire Wire Line
+	650  1600 875  1600
 $EndSCHEMATC
