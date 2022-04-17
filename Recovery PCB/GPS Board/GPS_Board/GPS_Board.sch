@@ -51,19 +51,6 @@ Wire Wire Line
 	8575 1650 8575 1800
 Wire Wire Line
 	6975 1325 7100 1325
-Wire Wire Line
-	5650 3700 5925 3700
-$Comp
-L power:GND #PWR0101
-U 1 1 61ABCD1D
-P 5925 4000
-F 0 "#PWR0101" H 5925 3750 50  0001 C CNN
-F 1 "GND" V 5930 3872 50  0000 R CNN
-F 2 "" H 5925 4000 50  0001 C CNN
-F 3 "" H 5925 4000 50  0001 C CNN
-	1    5925 4000
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 61ABF5FF
@@ -145,34 +132,9 @@ F 3 "" H 2950 5125 50  0001 C CNN
 	1    2950 5125
 	1    0    0    -1  
 $EndComp
-Text Label 5450 4100 0    50   ~ 0
-GPS_SCL
-Text Label 5450 4200 0    50   ~ 0
-GPS_SDA
-$Comp
-L power:+3.3V #PWR0104
-U 1 1 625F178F
-P 5550 3800
-F 0 "#PWR0104" H 5550 3650 50  0001 C CNN
-F 1 "+3.3V" V 5565 3928 50  0000 L CNN
-F 2 "" H 5550 3800 50  0001 C CNN
-F 3 "" H 5550 3800 50  0001 C CNN
-	1    5550 3800
-	0    -1   -1   0   
-$EndComp
-Text Label 7400 3800 2    39   ~ 0
-GPS_RESET
-Wire Wire Line
-	6975 3800 7400 3800
-Wire Wire Line
-	6975 3900 7400 3900
 Text Label 4525 2500 2    39   ~ 0
 GPS_PPS
-Text Label 7400 3900 2    39   ~ 0
-GPS_PPS
 Text Label 4525 2600 2    39   ~ 0
-GPS_INT
-Text Label 7400 3700 2    39   ~ 0
 GPS_INT
 Text Label 4550 2700 2    39   ~ 0
 XBEE_SCK
@@ -346,17 +308,6 @@ F 3 "" H 4000 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP8
-U 1 1 625F3DB9
-P 5625 3950
-F 0 "TP8" V 5525 4300 50  0000 C CNN
-F 1 "TestPoint" V 5625 4350 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5825 3950 50  0001 C CNN
-F 3 "~" H 5825 3950 50  0001 C CNN
-	1    5625 3950
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector:TestPoint TP7
 U 1 1 625F9755
 P 9655 2451
@@ -401,36 +352,6 @@ F 3 "~" H 7225 1250 50  0001 C CNN
 	1    7025 1250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5450 4200 5925 4200
-Wire Wire Line
-	5450 4100 5925 4100
-Text Label 5650 3700 0    39   ~ 0
-GPS_RX
-Wire Wire Line
-	5650 3600 5925 3600
-Text Label 5650 3600 0    39   ~ 0
-GPS_TX
-Wire Wire Line
-	5925 3800 5625 3800
-$Comp
-L GPS_Board:Sparkfun-GPS-Breakout A2
-U 1 1 61AAF79D
-P 6450 3850
-F 0 "A2" H 6500 4590 50  0000 C CNN
-F 1 "Sparkfun-GPS-Breakout" H 6500 4499 50  0000 C CNN
-F 2 "GPS Board:Sparkfun-GPS-ZOE-M8Q-Breakout" H 6450 3850 50  0001 C CNN
-F 3 "" H 6450 3850 50  0001 C CNN
-	1    6450 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5625 3800 5625 3950
-Connection ~ 5625 3800
-Wire Wire Line
-	5625 3800 5550 3800
-Wire Wire Line
-	6975 3700 7400 3700
 Wire Wire Line
 	5275 1225 5425 1225
 Wire Wire Line
@@ -518,12 +439,12 @@ Wire Wire Line
 $Comp
 L GPS_Board:conn_recovery8 U6
 U 1 1 625CF541
-P 6900 5900
-F 0 "U6" H 6913 5255 50  0000 C CNN
-F 1 "conn_recovery8" H 6913 5346 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6900 5900 50  0001 C CNN
-F 3 "" H 6900 5900 50  0001 C CNN
-	1    6900 5900
+P 5350 3775
+F 0 "U6" H 5363 3130 50  0000 C CNN
+F 1 "conn_recovery8" H 5363 3221 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5350 3775 50  0001 C CNN
+F 3 "" H 5350 3775 50  0001 C CNN
+	1    5350 3775
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -631,31 +552,27 @@ XBEE_SCL
 Text Label 10150 5250 0    50   ~ 0
 XBEE_SDA
 Wire Wire Line
-	7100 6200 7475 6200
+	5550 4075 5925 4075
 Wire Wire Line
-	7100 6100 7475 6100
+	5550 3975 5925 3975
 $Comp
 L power:GND #PWR0124
 U 1 1 625B254D
-P 7100 6000
-F 0 "#PWR0124" H 7100 5750 50  0001 C CNN
-F 1 "GND" V 7105 5872 50  0000 R CNN
-F 2 "" H 7100 6000 50  0001 C CNN
-F 3 "" H 7100 6000 50  0001 C CNN
-	1    7100 6000
+P 5550 3875
+F 0 "#PWR0124" H 5550 3625 50  0001 C CNN
+F 1 "GND" V 5555 3747 50  0000 R CNN
+F 2 "" H 5550 3875 50  0001 C CNN
+F 3 "" H 5550 3875 50  0001 C CNN
+	1    5550 3875
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7100 5600 7475 5600
-Wire Wire Line
-	7100 5700 7475 5700
-Text Label 7475 5600 2    50   ~ 0
-GPS_TX
-Text Label 7475 5700 2    50   ~ 0
+	5550 3575 5925 3575
+Text Label 5925 3575 2    50   ~ 0
 GPS_RX
-Text Label 7475 6100 2    50   ~ 0
+Text Label 5925 3975 2    50   ~ 0
 GPS_SCL
-Text Label 7475 6200 2    50   ~ 0
+Text Label 5925 4075 2    50   ~ 0
 GPS_SDA
 $Comp
 L GPS_Board:conn_recovery10 U5
@@ -732,24 +649,24 @@ XBEE_SCL
 $Comp
 L power:+3.3V #PWR0125
 U 1 1 627DA545
-P 7100 5800
-F 0 "#PWR0125" H 7100 5650 50  0001 C CNN
-F 1 "+3.3V" V 7115 5928 50  0000 L CNN
-F 2 "" H 7100 5800 50  0001 C CNN
-F 3 "" H 7100 5800 50  0001 C CNN
-	1    7100 5800
+P 5550 3675
+F 0 "#PWR0125" H 5550 3525 50  0001 C CNN
+F 1 "+3.3V" V 5565 3803 50  0000 L CNN
+F 2 "" H 5550 3675 50  0001 C CNN
+F 3 "" H 5550 3675 50  0001 C CNN
+	1    5550 3675
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+3.3V #PWR0126
 U 1 1 62864185
-P 1575 2800
-F 0 "#PWR0126" H 1575 2650 50  0001 C CNN
-F 1 "+3.3V" V 1590 2928 50  0000 L CNN
-F 2 "" H 1575 2800 50  0001 C CNN
-F 3 "" H 1575 2800 50  0001 C CNN
-	1    1575 2800
-	0    -1   -1   0   
+P 4225 1600
+F 0 "#PWR0126" H 4225 1450 50  0001 C CNN
+F 1 "+3.3V" V 4240 1728 50  0000 L CNN
+F 2 "" H 4225 1600 50  0001 C CNN
+F 3 "" H 4225 1600 50  0001 C CNN
+	1    4225 1600
+	0    1    1    0   
 $EndComp
 Text Label 1300 3300 0    39   ~ 0
 XBEE_TX
@@ -893,4 +810,87 @@ Wire Wire Line
 	4000 3300 4550 3300
 Wire Wire Line
 	4000 3200 4525 3200
+Text Label 5925 3475 2    50   ~ 0
+GPS_TX
+Wire Wire Line
+	5550 3475 5925 3475
+Wire Wire Line
+	7825 3575 8250 3575
+Wire Wire Line
+	6475 3675 6400 3675
+Connection ~ 6475 3675
+Wire Wire Line
+	6475 3675 6475 3825
+$Comp
+L GPS_Board:Sparkfun-GPS-Breakout A2
+U 1 1 61AAF79D
+P 7300 3725
+F 0 "A2" H 7350 4465 50  0000 C CNN
+F 1 "Sparkfun-GPS-Breakout" H 7350 4374 50  0000 C CNN
+F 2 "GPS Board:Sparkfun-GPS-ZOE-M8Q-Breakout" H 7300 3725 50  0001 C CNN
+F 3 "" H 7300 3725 50  0001 C CNN
+	1    7300 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6775 3675 6475 3675
+Text Label 6500 3475 0    39   ~ 0
+GPS_TX
+Wire Wire Line
+	6500 3475 6775 3475
+Text Label 6500 3575 0    39   ~ 0
+GPS_RX
+Wire Wire Line
+	6300 3975 6775 3975
+Wire Wire Line
+	6300 4075 6775 4075
+$Comp
+L Connector:TestPoint TP8
+U 1 1 625F3DB9
+P 6475 3825
+F 0 "TP8" V 6375 4175 50  0000 C CNN
+F 1 "TestPoint" V 6475 4225 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6675 3825 50  0001 C CNN
+F 3 "~" H 6675 3825 50  0001 C CNN
+	1    6475 3825
+	0    -1   -1   0   
+$EndComp
+Text Label 8250 3575 2    39   ~ 0
+GPS_INT
+Text Label 8250 3775 2    39   ~ 0
+GPS_PPS
+Wire Wire Line
+	7825 3775 8250 3775
+Wire Wire Line
+	7825 3675 8250 3675
+Text Label 8250 3675 2    39   ~ 0
+GPS_RESET
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 625F178F
+P 6400 3675
+F 0 "#PWR0104" H 6400 3525 50  0001 C CNN
+F 1 "+3.3V" V 6415 3803 50  0000 L CNN
+F 2 "" H 6400 3675 50  0001 C CNN
+F 3 "" H 6400 3675 50  0001 C CNN
+	1    6400 3675
+	0    -1   -1   0   
+$EndComp
+Text Label 6300 4075 0    50   ~ 0
+GPS_SDA
+Text Label 6300 3975 0    50   ~ 0
+GPS_SCL
+$Comp
+L power:GND #PWR0101
+U 1 1 61ABCD1D
+P 6775 3875
+F 0 "#PWR0101" H 6775 3625 50  0001 C CNN
+F 1 "GND" V 6780 3747 50  0000 R CNN
+F 2 "" H 6775 3875 50  0001 C CNN
+F 3 "" H 6775 3875 50  0001 C CNN
+	1    6775 3875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 3575 6775 3575
 $EndSCHEMATC
