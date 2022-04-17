@@ -63,28 +63,6 @@ F 3 "" H 1575 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0103
-U 1 1 61AC06CC
-P 4225 1500
-F 0 "#PWR0103" H 4225 1250 50  0001 C CNN
-F 1 "GND" V 4230 1372 50  0000 R CNN
-F 2 "" H 4225 1500 50  0001 C CNN
-F 3 "" H 4225 1500 50  0001 C CNN
-	1    4225 1500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 61AC2FBA
-P 4225 2800
-F 0 "#PWR0105" H 4225 2550 50  0001 C CNN
-F 1 "GND" V 4230 2672 50  0000 R CNN
-F 2 "" H 4225 2800 50  0001 C CNN
-F 3 "" H 4225 2800 50  0001 C CNN
-	1    4225 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0106
 U 1 1 61ACAD1F
 P 5250 2225
@@ -95,49 +73,6 @@ F 3 "" H 5250 2225 50  0001 C CNN
 	1    5250 2225
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 61ACEA37
-P 2900 4850
-F 0 "TP2" H 2842 4876 50  0000 R CNN
-F 1 "TestPoint" H 2842 4967 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3100 4850 50  0001 C CNN
-F 3 "~" H 3100 4850 50  0001 C CNN
-	1    2900 4850
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR0107
-U 1 1 61AD1665
-P 4225 1400
-F 0 "#PWR0107" H 4225 1250 50  0001 C CNN
-F 1 "+5V" V 4240 1528 50  0000 L CNN
-F 2 "" H 4225 1400 50  0001 C CNN
-F 3 "" H 4225 1400 50  0001 C CNN
-	1    4225 1400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2900 4850 2950 4850
-Wire Wire Line
-	2950 4850 2950 5125
-$Comp
-L power:GND #PWR0109
-U 1 1 61ADB104
-P 2950 5125
-F 0 "#PWR0109" H 2950 4875 50  0001 C CNN
-F 1 "GND" H 2955 4952 50  0000 C CNN
-F 2 "" H 2950 5125 50  0001 C CNN
-F 3 "" H 2950 5125 50  0001 C CNN
-	1    2950 5125
-	1    0    0    -1  
-$EndComp
-Text Label 4525 2500 2    39   ~ 0
-GPS_PPS
-Text Label 4525 2600 2    39   ~ 0
-GPS_INT
-Text Label 4550 2700 2    39   ~ 0
-XBEE_SCK
 Text Label 6575 1425 2    39   ~ 0
 XBEE_SCK
 $Comp
@@ -151,13 +86,9 @@ F 3 "" H 5275 1225 50  0001 C CNN
 	1    5275 1225
 	0    -1   -1   0   
 $EndComp
-Text Label 4550 3300 2    39   ~ 0
-XBEE_RESET
 Text Label 5150 1725 0    39   ~ 0
 XBEE_PWM
 Text Label 5150 2025 0    39   ~ 0
-XBEE_DTR
-Text Label 4525 3200 2    39   ~ 0
 XBEE_DTR
 Text Label 6675 2125 2    39   ~ 0
 XBEE_MOSI
@@ -384,10 +315,6 @@ $EndComp
 Connection ~ 8350 1650
 Wire Wire Line
 	8350 1650 8575 1650
-Text Label 4225 2100 0    39   ~ 0
-GPS_SCL
-Text Label 4225 2200 0    39   ~ 0
-GPS_SDA
 Wire Wire Line
 	9640 2580 9640 2451
 Wire Wire Line
@@ -404,18 +331,6 @@ F 3 "" H 9640 2580 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 9640 2580
-Connection ~ 2900 4850
-$Comp
-L GPS_Board-rescue:Teensy4.1-teensy U1
-U 1 1 61A899BD
-P 2900 3550
-F 0 "U1" H 2900 6115 50  0000 C CNN
-F 1 "Teensy4.1" H 2900 6024 50  0000 C CNN
-F 2 "GPS Board:Teensy41" H 2500 3950 50  0001 C CNN
-F 3 "" H 2500 3950 50  0001 C CNN
-	1    2900 3550
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:TestPoint TP9
 U 1 1 625C34C1
@@ -657,17 +572,6 @@ F 3 "" H 5550 3675 50  0001 C CNN
 	1    5550 3675
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+3.3V #PWR0126
-U 1 1 62864185
-P 4225 1600
-F 0 "#PWR0126" H 4225 1450 50  0001 C CNN
-F 1 "+3.3V" V 4240 1728 50  0000 L CNN
-F 2 "" H 4225 1600 50  0001 C CNN
-F 3 "" H 4225 1600 50  0001 C CNN
-	1    4225 1600
-	0    1    1    0   
-$EndComp
 Text Label 1300 3300 0    39   ~ 0
 XBEE_TX
 Text Label 1300 3400 0    39   ~ 0
@@ -745,71 +649,12 @@ Wire Wire Line
 	1300 2500 1800 2500
 Wire Wire Line
 	1260 2300 1800 2300
-$Comp
-L Connector:Conn_01x24_Male J4
-U 1 1 62662A48
-P 4200 2600
-F 0 "J4" H 4325 1025 50  0000 R CNN
-F 1 "Conn_01x24_Male" H 4475 3800 50  0000 R CNN
-F 2 "GPS Board:SMD_Connector_1x24" H 4200 2600 50  0001 C CNN
-F 3 "~" H 4200 2600 50  0001 C CNN
-	1    4200 2600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4000 1400 4225 1400
-Wire Wire Line
-	4225 1500 4000 1500
-Wire Wire Line
-	4000 1600 4225 1600
 Wire Wire Line
 	1800 1400 1575 1400
 Wire Wire Line
 	1075 1600 1800 1600
 Wire Wire Line
 	1075 1500 1800 1500
-Wire Wire Line
-	4000 1700 4225 1700
-Wire Wire Line
-	4225 1800 4000 1800
-Wire Wire Line
-	4000 1900 4225 1900
-Wire Wire Line
-	4000 2000 4225 2000
-Wire Wire Line
-	4000 2300 4225 2300
-Wire Wire Line
-	4225 2400 4000 2400
-Wire Wire Line
-	4000 2800 4225 2800
-Wire Wire Line
-	4000 2900 4225 2900
-Wire Wire Line
-	4225 3000 4000 3000
-Wire Wire Line
-	4000 3100 4225 3100
-Wire Wire Line
-	4000 3400 4225 3400
-Wire Wire Line
-	4000 3500 4225 3500
-Wire Wire Line
-	4225 3600 4000 3600
-Wire Wire Line
-	4000 3700 4225 3700
-Wire Wire Line
-	4000 2200 4525 2200
-Wire Wire Line
-	4000 2100 4525 2100
-Wire Wire Line
-	4000 2500 4525 2500
-Wire Wire Line
-	4000 2600 4525 2600
-Wire Wire Line
-	4000 2700 4550 2700
-Wire Wire Line
-	4000 3300 4550 3300
-Wire Wire Line
-	4000 3200 4525 3200
 Text Label 5925 3475 2    50   ~ 0
 GPS_TX
 Wire Wire Line
@@ -893,4 +738,143 @@ F 3 "" H 6775 3875 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6500 3575 6775 3575
+$Comp
+L GPS_Board-rescue:Teensy4.1-teensy U1
+U 1 1 61A899BD
+P 2900 3550
+F 0 "U1" H 2900 6115 50  0000 C CNN
+F 1 "Teensy4.1" H 2900 6024 50  0000 C CNN
+F 2 "GPS Board:Teensy41" H 2500 3950 50  0001 C CNN
+F 3 "" H 2500 3950 50  0001 C CNN
+	1    2900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3700 4225 3700
+Wire Wire Line
+	4000 3200 4525 3200
+Wire Wire Line
+	4000 3300 4550 3300
+Wire Wire Line
+	4000 2700 4550 2700
+Wire Wire Line
+	4000 2600 4525 2600
+Wire Wire Line
+	4000 2500 4525 2500
+Wire Wire Line
+	4000 2100 4525 2100
+Wire Wire Line
+	4000 2200 4525 2200
+Wire Wire Line
+	4225 3600 4000 3600
+Wire Wire Line
+	4000 3500 4225 3500
+Wire Wire Line
+	4000 3400 4225 3400
+Wire Wire Line
+	4000 3100 4225 3100
+Wire Wire Line
+	4225 3000 4000 3000
+Wire Wire Line
+	4000 2900 4225 2900
+Wire Wire Line
+	4000 2800 4225 2800
+Wire Wire Line
+	4225 2400 4000 2400
+Wire Wire Line
+	4000 2300 4225 2300
+Wire Wire Line
+	4000 2000 4225 2000
+Wire Wire Line
+	4000 1900 4225 1900
+Wire Wire Line
+	4225 1800 4000 1800
+Wire Wire Line
+	4000 1700 4225 1700
+Wire Wire Line
+	4000 1600 4225 1600
+Wire Wire Line
+	4225 1500 4000 1500
+Wire Wire Line
+	4000 1400 4225 1400
+$Comp
+L Connector:Conn_01x24_Male J4
+U 1 1 62662A48
+P 4200 2600
+F 0 "J4" H 4325 1025 50  0000 R CNN
+F 1 "Conn_01x24_Male" H 4475 3800 50  0000 R CNN
+F 2 "GPS Board:SMD_Connector_1x24" H 4200 2600 50  0001 C CNN
+F 3 "~" H 4200 2600 50  0001 C CNN
+	1    4200 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0126
+U 1 1 62864185
+P 4225 1600
+F 0 "#PWR0126" H 4225 1450 50  0001 C CNN
+F 1 "+3.3V" V 4240 1728 50  0000 L CNN
+F 2 "" H 4225 1600 50  0001 C CNN
+F 3 "" H 4225 1600 50  0001 C CNN
+	1    4225 1600
+	0    1    1    0   
+$EndComp
+Text Label 4225 2200 0    39   ~ 0
+GPS_SDA
+Text Label 4225 2100 0    39   ~ 0
+GPS_SCL
+Text Label 4525 3200 2    39   ~ 0
+XBEE_DTR
+Text Label 4550 3300 2    39   ~ 0
+XBEE_RESET
+Text Label 4550 2700 2    39   ~ 0
+XBEE_SCK
+Text Label 4525 2600 2    39   ~ 0
+GPS_INT
+Text Label 4525 2500 2    39   ~ 0
+GPS_PPS
+$Comp
+L power:+5V #PWR0107
+U 1 1 61AD1665
+P 4225 1400
+F 0 "#PWR0107" H 4225 1250 50  0001 C CNN
+F 1 "+5V" V 4240 1528 50  0000 L CNN
+F 2 "" H 4225 1400 50  0001 C CNN
+F 3 "" H 4225 1400 50  0001 C CNN
+	1    4225 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 61AC2FBA
+P 4225 2800
+F 0 "#PWR0105" H 4225 2550 50  0001 C CNN
+F 1 "GND" V 4230 2672 50  0000 R CNN
+F 2 "" H 4225 2800 50  0001 C CNN
+F 3 "" H 4225 2800 50  0001 C CNN
+	1    4225 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61AC06CC
+P 4225 1500
+F 0 "#PWR0103" H 4225 1250 50  0001 C CNN
+F 1 "GND" V 4230 1372 50  0000 R CNN
+F 2 "" H 4225 1500 50  0001 C CNN
+F 3 "" H 4225 1500 50  0001 C CNN
+	1    4225 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 61ADB104
+P 2900 4850
+F 0 "#PWR0109" H 2900 4600 50  0001 C CNN
+F 1 "GND" H 2905 4677 50  0000 C CNN
+F 2 "" H 2900 4850 50  0001 C CNN
+F 3 "" H 2900 4850 50  0001 C CNN
+	1    2900 4850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
